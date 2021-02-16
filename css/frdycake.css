@@ -1,4 +1,20 @@
 /** Color */
+.box-border { box-sizing: border-box !important; }
+
+.box-content { box-sizing: content-box !important; }
+
+@media (min-width: 576px) { .box-sm-border { box-sizing: border-box !important; }
+  .box-sm-content { box-sizing: content-box !important; } }
+
+@media (min-width: 768px) { .box-md-border { box-sizing: border-box !important; }
+  .box-md-content { box-sizing: content-box !important; } }
+
+@media (min-width: 992px) { .box-lg-border { box-sizing: border-box !important; }
+  .box-lg-content { box-sizing: content-box !important; } }
+
+@media (min-width: 1200px) { .box-xl-border { box-sizing: border-box !important; }
+  .box-xl-content { box-sizing: content-box !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
