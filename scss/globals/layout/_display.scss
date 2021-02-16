@@ -1,0 +1,25 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  
+        .block#{$infix} { display: block !important; }
+        .inline#{$infix} { display: inline !important; }
+        .inline#{$infix}-block { display: inline-block !important; }
+        .inline#{$infix}-flex { display: flex !important; }
+        .inline#{$infix}-grid { display: inline-grid !important; }
+        .flex#{$infix} { display: flex !important; }
+        .table#{$infix} { display: table !important; }
+        .table#{$infix}-caption { display: table-caption !important; }
+        .table#{$infix}-cell { display: table-cell !important; }
+        .table#{$infix}-column { display: table-column !important; }
+        .table#{$infix}-column-group { display: table-column-group !important; }
+        .table#{$infix}-footer-group { display: table-footer-group !important; }
+        .table#{$infix}-header-group { display: table-header-group !important; }
+        .table#{$infix}-row-group { display: table-row-group !important; }
+        .table#{$infix}-row { display: row !important; }
+        .flow#{$infix}-root { display: flow-root !important; }
+        .grid#{$infix} { display: grid !important; }
+        .contents#{$infix} { display: contents !important; }
+        .hidden#{$infix} { display: none !important; }
+    }
+}
