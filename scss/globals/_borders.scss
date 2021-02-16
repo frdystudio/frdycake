@@ -1,0 +1,192 @@
+$spacer: 1rem;
+
+.rounded-1 {
+  border-radius: .25rem !important;
+}
+.rounded-2 {
+  border-radius: .5rem !important;
+}
+.rounded-3 {
+  border-radius: 1rem !important;
+}
+
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
+
+.rounded-100 {
+  border-radius: 100px !important;
+}
+
+/** Border */
+.border { border: 1px solid transparent; }
+
+/** Border Style */@at-root
+.border-none {
+  border-style: none !important;
+}
+.border-dotted {
+  border-style: dotted !important;
+}
+.border-solid {
+  border-style: solid !important;
+}
+.border-unset {
+  border-style: unset !important;
+}
+
+/** Border width */
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (border-width: border-width) {
+      @each $size, $length in $spacers {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+      }
+    }
+  }
+}
+
+/** Border Color */
+.border-color {
+  &-primary {
+    border-color: $primary !important;
+
+    &-1 { border-color: rgba($color: $primary, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $primary, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $primary, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $primary, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $primary, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $primary, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $primary, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $primary, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $primary, $alpha: .9) !important; }
+  }
+
+  &-secondary {
+    border-color: $secondary !important;
+
+    &-1 { border-color: rgba($color: $secondary, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $secondary, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $secondary, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $secondary, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $secondary, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $secondary, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $secondary, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $secondary, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $secondary, $alpha: .9) !important; }
+  }
+
+  &-success {
+    border-color: $success !important;
+
+    &-1 { border-color: rgba($color: $success, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $success, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $success, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $success, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $success, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $success, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $success, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $success, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $success, $alpha: .9) !important; }
+  }
+
+  &-info {
+    border-color: $info !important;
+
+    &-1 { border-color: rgba($color: $info, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $info, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $info, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $info, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $info, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $info, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $info, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $info, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $info, $alpha: .9) !important; }
+  }
+
+  &-warning {
+    border-color: $warning !important;
+
+    &-1 { border-color: rgba($color: $warning, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $warning, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $warning, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $warning, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $warning, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $warning, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $warning, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $warning, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $warning, $alpha: .9) !important; }
+  }
+
+  &-danger {
+    border-color: $danger !important;
+
+    &-1 { border-color: rgba($color: $danger, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $danger, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $danger, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $danger, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $danger, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $danger, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $danger, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $danger, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $danger, $alpha: .9) !important; }
+  }
+
+  &-black {
+    border-color: $black !important;
+
+    &-1 { border-color: rgba($color: $black, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $black, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $black, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $black, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $black, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $black, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $black, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $black, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $black, $alpha: .9) !important; }
+  }
+
+  &-white {
+    border-color: $white !important;
+
+    &-1 { border-color: rgba($color: $white, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $white, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $white, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $white, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $white, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $white, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $white, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $white, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $white, $alpha: .9) !important; }
+  }
+
+  &-gray {
+    border-color: $gray !important;
+
+    &-1 { border-color: rgba($color: $gray, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $gray, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $gray, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $gray, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $gray, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $gray, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $gray, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $gray, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $gray, $alpha: .9) !important; }
+  }
+
+  &-gray-light {
+    border-color: $gray-light !important;
+
+    &-1 { border-color: rgba($color: $gray-light, $alpha: .1) !important; }
+    &-2 { border-color: rgba($color: $gray-light, $alpha: .2) !important; }
+    &-3 { border-color: rgba($color: $gray-light, $alpha: .3) !important; }
+    &-4 { border-color: rgba($color: $gray-light, $alpha: .4) !important; }
+    &-5 { border-color: rgba($color: $gray-light, $alpha: .5) !important; }
+    &-6 { border-color: rgba($color: $gray-light, $alpha: .6) !important; }
+    &-7 { border-color: rgba($color: $gray-light, $alpha: .7) !important; }
+    &-8 { border-color: rgba($color: $gray-light, $alpha: .8) !important; }
+    &-9 { border-color: rgba($color: $gray-light, $alpha: .9) !important; }
+  }
+}

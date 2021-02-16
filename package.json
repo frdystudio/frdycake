@@ -1,0 +1,19 @@
+{
+  "name": "frdycake",
+  "version": "1.0.0",
+  "description": "frdycake is a CSS Utility first ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frdystudio/frdycake.git"
+  },
+  "author": "frdy studio",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/frdystudio/frdycake/issues"
+  },
+  "homepage": "https://github.com/frdystudio/frdycake#readme"
+}
