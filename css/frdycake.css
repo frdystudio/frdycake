@@ -409,6 +409,40 @@
   .overscroll-xl-x-contain { overscroll-behavior-x: contain !important; }
   .overscroll-xl-x-none { overscroll-behavior-x: none !important; } }
 
+.position-static { position: static !important; }
+
+.position-fixed { position: fixed !important; }
+
+.position-absolute { position: absolute !important; }
+
+.position-relative { position: relative !important; }
+
+.position-sticky { position: sticky !important; }
+
+@media (min-width: 576px) { .position-sm-static { position: static !important; }
+  .position-sm-fixed { position: fixed !important; }
+  .position-sm-absolute { position: absolute !important; }
+  .position-sm-relative { position: relative !important; }
+  .position-sm-sticky { position: sticky !important; } }
+
+@media (min-width: 768px) { .position-md-static { position: static !important; }
+  .position-md-fixed { position: fixed !important; }
+  .position-md-absolute { position: absolute !important; }
+  .position-md-relative { position: relative !important; }
+  .position-md-sticky { position: sticky !important; } }
+
+@media (min-width: 992px) { .position-lg-static { position: static !important; }
+  .position-lg-fixed { position: fixed !important; }
+  .position-lg-absolute { position: absolute !important; }
+  .position-lg-relative { position: relative !important; }
+  .position-lg-sticky { position: sticky !important; } }
+
+@media (min-width: 1200px) { .position-xl-static { position: static !important; }
+  .position-xl-fixed { position: fixed !important; }
+  .position-xl-absolute { position: absolute !important; }
+  .position-xl-relative { position: relative !important; }
+  .position-xl-sticky { position: sticky !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
