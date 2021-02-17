@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('fixed': fixed, 'local': local, 'scroll': scroll);
+
+    @each $var, $background-attachment in $var {
+      .bg#{$infix}-#{$var} { background-attachment: $background-attachment !important; }
+    }
+  }
+}

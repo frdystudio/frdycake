@@ -15359,6 +15359,28 @@
   .max-h-xl-43 { max-height: 25rem !important; }
   .max-h-xl-44 { max-height: 25.5rem !important; } }
 
+.bg-fixed { background-attachment: fixed !important; }
+
+.bg-local { background-attachment: local !important; }
+
+.bg-scroll { background-attachment: scroll !important; }
+
+@media (min-width: 576px) { .bg-sm-fixed { background-attachment: fixed !important; }
+  .bg-sm-local { background-attachment: local !important; }
+  .bg-sm-scroll { background-attachment: scroll !important; } }
+
+@media (min-width: 768px) { .bg-md-fixed { background-attachment: fixed !important; }
+  .bg-md-local { background-attachment: local !important; }
+  .bg-md-scroll { background-attachment: scroll !important; } }
+
+@media (min-width: 992px) { .bg-lg-fixed { background-attachment: fixed !important; }
+  .bg-lg-local { background-attachment: local !important; }
+  .bg-lg-scroll { background-attachment: scroll !important; } }
+
+@media (min-width: 1200px) { .bg-xl-fixed { background-attachment: fixed !important; }
+  .bg-xl-local { background-attachment: local !important; }
+  .bg-xl-scroll { background-attachment: scroll !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
