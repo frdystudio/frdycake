@@ -1,0 +1,21 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .bg#{$infix}-opacity-0 { --frdy-bg-opacity: 0 !important; }
+    .bg#{$infix}-opacity-5 { --frdy-bg-opacity: .05 !important; }
+    .bg#{$infix}-opacity-10 { --frdy-bg-opacity: .1 !important; }
+    .bg#{$infix}-opacity-20 { --frdy-bg-opacity: .2 !important; }
+    .bg#{$infix}-opacity-25 { --frdy-bg-opacity: .25 !important; }
+    .bg#{$infix}-opacity-30 { --frdy-bg-opacity: .3 !important; }
+    .bg#{$infix}-opacity-40 { --frdy-bg-opacity: .4 !important; }
+    .bg#{$infix}-opacity-50 { --frdy-bg-opacity: .5 !important; }
+    .bg#{$infix}-opacity-60 { --frdy-bg-opacity: .6 !important; }
+    .bg#{$infix}-opacity-70 { --frdy-bg-opacity: .7 !important; }
+    .bg#{$infix}-opacity-75 { --frdy-bg-opacity: .75 !important; }
+    .bg#{$infix}-opacity-80 { --frdy-bg-opacity: .8 !important; }
+    .bg#{$infix}-opacity-90 { --frdy-bg-opacity: .9 !important; }
+    .bg#{$infix}-opacity-95 { --frdy-bg-opacity: .95 !important; }
+    .bg#{$infix}-opacity-100 { --frdy-bg-opacity: 1 !important; }
+  }
+}

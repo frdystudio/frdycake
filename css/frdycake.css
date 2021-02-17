@@ -15485,6 +15485,100 @@
   .bg-xl-gray { --frdy-bg-opacity: 1; background-color: rgba(90, 113, 132, var(--frdy-bg-opacity)) !important; }
   .bg-xl-gray-light { --frdy-bg-opacity: 1; background-color: rgba(179, 186, 197, var(--frdy-bg-opacity)) !important; } }
 
+.bg-opacity-0 { --frdy-bg-opacity: 0 !important; }
+
+.bg-opacity-5 { --frdy-bg-opacity: .05 !important; }
+
+.bg-opacity-10 { --frdy-bg-opacity: .1 !important; }
+
+.bg-opacity-20 { --frdy-bg-opacity: .2 !important; }
+
+.bg-opacity-25 { --frdy-bg-opacity: .25 !important; }
+
+.bg-opacity-30 { --frdy-bg-opacity: .3 !important; }
+
+.bg-opacity-40 { --frdy-bg-opacity: .4 !important; }
+
+.bg-opacity-50 { --frdy-bg-opacity: .5 !important; }
+
+.bg-opacity-60 { --frdy-bg-opacity: .6 !important; }
+
+.bg-opacity-70 { --frdy-bg-opacity: .7 !important; }
+
+.bg-opacity-75 { --frdy-bg-opacity: .75 !important; }
+
+.bg-opacity-80 { --frdy-bg-opacity: .8 !important; }
+
+.bg-opacity-90 { --frdy-bg-opacity: .9 !important; }
+
+.bg-opacity-95 { --frdy-bg-opacity: .95 !important; }
+
+.bg-opacity-100 { --frdy-bg-opacity: 1 !important; }
+
+@media (min-width: 576px) { .bg-sm-opacity-0 { --frdy-bg-opacity: 0 !important; }
+  .bg-sm-opacity-5 { --frdy-bg-opacity: .05 !important; }
+  .bg-sm-opacity-10 { --frdy-bg-opacity: .1 !important; }
+  .bg-sm-opacity-20 { --frdy-bg-opacity: .2 !important; }
+  .bg-sm-opacity-25 { --frdy-bg-opacity: .25 !important; }
+  .bg-sm-opacity-30 { --frdy-bg-opacity: .3 !important; }
+  .bg-sm-opacity-40 { --frdy-bg-opacity: .4 !important; }
+  .bg-sm-opacity-50 { --frdy-bg-opacity: .5 !important; }
+  .bg-sm-opacity-60 { --frdy-bg-opacity: .6 !important; }
+  .bg-sm-opacity-70 { --frdy-bg-opacity: .7 !important; }
+  .bg-sm-opacity-75 { --frdy-bg-opacity: .75 !important; }
+  .bg-sm-opacity-80 { --frdy-bg-opacity: .8 !important; }
+  .bg-sm-opacity-90 { --frdy-bg-opacity: .9 !important; }
+  .bg-sm-opacity-95 { --frdy-bg-opacity: .95 !important; }
+  .bg-sm-opacity-100 { --frdy-bg-opacity: 1 !important; } }
+
+@media (min-width: 768px) { .bg-md-opacity-0 { --frdy-bg-opacity: 0 !important; }
+  .bg-md-opacity-5 { --frdy-bg-opacity: .05 !important; }
+  .bg-md-opacity-10 { --frdy-bg-opacity: .1 !important; }
+  .bg-md-opacity-20 { --frdy-bg-opacity: .2 !important; }
+  .bg-md-opacity-25 { --frdy-bg-opacity: .25 !important; }
+  .bg-md-opacity-30 { --frdy-bg-opacity: .3 !important; }
+  .bg-md-opacity-40 { --frdy-bg-opacity: .4 !important; }
+  .bg-md-opacity-50 { --frdy-bg-opacity: .5 !important; }
+  .bg-md-opacity-60 { --frdy-bg-opacity: .6 !important; }
+  .bg-md-opacity-70 { --frdy-bg-opacity: .7 !important; }
+  .bg-md-opacity-75 { --frdy-bg-opacity: .75 !important; }
+  .bg-md-opacity-80 { --frdy-bg-opacity: .8 !important; }
+  .bg-md-opacity-90 { --frdy-bg-opacity: .9 !important; }
+  .bg-md-opacity-95 { --frdy-bg-opacity: .95 !important; }
+  .bg-md-opacity-100 { --frdy-bg-opacity: 1 !important; } }
+
+@media (min-width: 992px) { .bg-lg-opacity-0 { --frdy-bg-opacity: 0 !important; }
+  .bg-lg-opacity-5 { --frdy-bg-opacity: .05 !important; }
+  .bg-lg-opacity-10 { --frdy-bg-opacity: .1 !important; }
+  .bg-lg-opacity-20 { --frdy-bg-opacity: .2 !important; }
+  .bg-lg-opacity-25 { --frdy-bg-opacity: .25 !important; }
+  .bg-lg-opacity-30 { --frdy-bg-opacity: .3 !important; }
+  .bg-lg-opacity-40 { --frdy-bg-opacity: .4 !important; }
+  .bg-lg-opacity-50 { --frdy-bg-opacity: .5 !important; }
+  .bg-lg-opacity-60 { --frdy-bg-opacity: .6 !important; }
+  .bg-lg-opacity-70 { --frdy-bg-opacity: .7 !important; }
+  .bg-lg-opacity-75 { --frdy-bg-opacity: .75 !important; }
+  .bg-lg-opacity-80 { --frdy-bg-opacity: .8 !important; }
+  .bg-lg-opacity-90 { --frdy-bg-opacity: .9 !important; }
+  .bg-lg-opacity-95 { --frdy-bg-opacity: .95 !important; }
+  .bg-lg-opacity-100 { --frdy-bg-opacity: 1 !important; } }
+
+@media (min-width: 1200px) { .bg-xl-opacity-0 { --frdy-bg-opacity: 0 !important; }
+  .bg-xl-opacity-5 { --frdy-bg-opacity: .05 !important; }
+  .bg-xl-opacity-10 { --frdy-bg-opacity: .1 !important; }
+  .bg-xl-opacity-20 { --frdy-bg-opacity: .2 !important; }
+  .bg-xl-opacity-25 { --frdy-bg-opacity: .25 !important; }
+  .bg-xl-opacity-30 { --frdy-bg-opacity: .3 !important; }
+  .bg-xl-opacity-40 { --frdy-bg-opacity: .4 !important; }
+  .bg-xl-opacity-50 { --frdy-bg-opacity: .5 !important; }
+  .bg-xl-opacity-60 { --frdy-bg-opacity: .6 !important; }
+  .bg-xl-opacity-70 { --frdy-bg-opacity: .7 !important; }
+  .bg-xl-opacity-75 { --frdy-bg-opacity: .75 !important; }
+  .bg-xl-opacity-80 { --frdy-bg-opacity: .8 !important; }
+  .bg-xl-opacity-90 { --frdy-bg-opacity: .9 !important; }
+  .bg-xl-opacity-95 { --frdy-bg-opacity: .95 !important; }
+  .bg-xl-opacity-100 { --frdy-bg-opacity: 1 !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
