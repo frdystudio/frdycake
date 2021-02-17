@@ -15045,6 +15045,28 @@
   .h-xl-43 { height: 25rem !important; }
   .h-xl-44 { height: 25.5rem !important; } }
 
+.min-h-0 { min-height: 0 !important; }
+
+.min-h-full { min-height: 100% !important; }
+
+.min-h-screen { min-height: 100vh !important; }
+
+@media (min-width: 576px) { .min-h-sm-0 { min-height: 0 !important; }
+  .min-h-sm-full { min-height: 100% !important; }
+  .min-h-sm-screen { min-height: 100vh !important; } }
+
+@media (min-width: 768px) { .min-h-md-0 { min-height: 0 !important; }
+  .min-h-md-full { min-height: 100% !important; }
+  .min-h-md-screen { min-height: 100vh !important; } }
+
+@media (min-width: 992px) { .min-h-lg-0 { min-height: 0 !important; }
+  .min-h-lg-full { min-height: 100% !important; }
+  .min-h-lg-screen { min-height: 100vh !important; } }
+
+@media (min-width: 1200px) { .min-h-xl-0 { min-height: 0 !important; }
+  .min-h-xl-full { min-height: 100% !important; }
+  .min-h-xl-screen { min-height: 100vh !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }

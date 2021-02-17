@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('0': 0, 'full': 100%, 'screen': 100vh);
+
+    @each $var, $min-height in $var {
+      .min-h#{$infix}-#{$var} { min-height: $min-height !important; }
+    }
+  }
+}
