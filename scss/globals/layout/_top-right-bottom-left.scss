@@ -1,7 +1,7 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-        $var: ('0': 0%, '50': 50%, '33': 33.333333, '25': 25%, '66': 66.666667%, '75': 75%, '100': 100%);
+        $var: ('0': 0%, '50': 50%, '33': 33.333333%, '25': 25%, '66': 66.666667%, '75': 75%, '100': 100%);
 
         .inset#{$infix}-auto {
             top: auto !important;
