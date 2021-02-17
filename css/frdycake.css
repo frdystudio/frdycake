@@ -155,6 +155,34 @@
   .float-xl-end { float: right !important; }
   .float-xl-none { float: none !important; } }
 
+.clear-start { clear: left !important; }
+
+.clear-end { clear: right !important; }
+
+.clear-both { clear: both !important; }
+
+.clear-none { clear: none !important; }
+
+@media (min-width: 576px) { .clear-sm-start { clear: left !important; }
+  .clear-sm-end { clear: right !important; }
+  .clear-sm-both { clear: both !important; }
+  .clear-sm-none { clear: none !important; } }
+
+@media (min-width: 768px) { .clear-md-start { clear: left !important; }
+  .clear-md-end { clear: right !important; }
+  .clear-md-both { clear: both !important; }
+  .clear-md-none { clear: none !important; } }
+
+@media (min-width: 992px) { .clear-lg-start { clear: left !important; }
+  .clear-lg-end { clear: right !important; }
+  .clear-lg-both { clear: both !important; }
+  .clear-lg-none { clear: none !important; } }
+
+@media (min-width: 1200px) { .clear-xl-start { clear: left !important; }
+  .clear-xl-end { clear: right !important; }
+  .clear-xl-both { clear: both !important; }
+  .clear-xl-none { clear: none !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
