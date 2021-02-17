@@ -5165,6 +5165,22 @@
   .flex-xl-initial { flex: 0 1 auto !important; }
   .flex-xl-none { flex: none !important; } }
 
+.flex-grow { flex-grow: 1 !important; }
+
+.flex-grow-0 { flex-grow: 0 !important; }
+
+@media (min-width: 576px) { .flex-sm-grow { flex-grow: 1 !important; }
+  .flex-sm-grow-0 { flex-grow: 0 !important; } }
+
+@media (min-width: 768px) { .flex-md-grow { flex-grow: 1 !important; }
+  .flex-md-grow-0 { flex-grow: 0 !important; } }
+
+@media (min-width: 992px) { .flex-lg-grow { flex-grow: 1 !important; }
+  .flex-lg-grow-0 { flex-grow: 0 !important; } }
+
+@media (min-width: 1200px) { .flex-xl-grow { flex-grow: 1 !important; }
+  .flex-xl-grow-0 { flex-grow: 0 !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
