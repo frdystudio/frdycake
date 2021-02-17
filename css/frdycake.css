@@ -5223,9 +5223,9 @@
 
 .order-13 { order: 13 !important; }
 
-.order-first { order: "-9999" !important; }
+.order-first { order: -9999 !important; }
 
-.order-last { order: "9999" !important; }
+.order-last { order: 9999 !important; }
 
 .order-none { order: 0 !important; }
 
@@ -5242,8 +5242,8 @@
   .order-sm-11 { order: 11 !important; }
   .order-sm-12 { order: 12 !important; }
   .order-sm-13 { order: 13 !important; }
-  .order-sm-first { order: "-9999" !important; }
-  .order-sm-last { order: "9999" !important; }
+  .order-sm-first { order: -9999 !important; }
+  .order-sm-last { order: 9999 !important; }
   .order-sm-none { order: 0 !important; } }
 
 @media (min-width: 768px) { .order-md-1 { order: 1 !important; }
@@ -5259,8 +5259,8 @@
   .order-md-11 { order: 11 !important; }
   .order-md-12 { order: 12 !important; }
   .order-md-13 { order: 13 !important; }
-  .order-md-first { order: "-9999" !important; }
-  .order-md-last { order: "9999" !important; }
+  .order-md-first { order: -9999 !important; }
+  .order-md-last { order: 9999 !important; }
   .order-md-none { order: 0 !important; } }
 
 @media (min-width: 992px) { .order-lg-1 { order: 1 !important; }
@@ -5276,8 +5276,8 @@
   .order-lg-11 { order: 11 !important; }
   .order-lg-12 { order: 12 !important; }
   .order-lg-13 { order: 13 !important; }
-  .order-lg-first { order: "-9999" !important; }
-  .order-lg-last { order: "9999" !important; }
+  .order-lg-first { order: -9999 !important; }
+  .order-lg-last { order: 9999 !important; }
   .order-lg-none { order: 0 !important; } }
 
 @media (min-width: 1200px) { .order-xl-1 { order: 1 !important; }
@@ -5293,8 +5293,8 @@
   .order-xl-11 { order: 11 !important; }
   .order-xl-12 { order: 12 !important; }
   .order-xl-13 { order: 13 !important; }
-  .order-xl-first { order: "-9999" !important; }
-  .order-xl-last { order: "9999" !important; }
+  .order-xl-first { order: -9999 !important; }
+  .order-xl-last { order: 9999 !important; }
   .order-xl-none { order: 0 !important; } }
 
 .justify-content-start { justify-content: flex-start !important; }
