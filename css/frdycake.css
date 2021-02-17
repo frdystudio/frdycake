@@ -15677,6 +15677,28 @@
   .bg-xl-repeat-round { background-repeat: round !important; }
   .bg-xl-repeat-space { background-repeat: space !important; } }
 
+.bg-auto { background-size: auto !important; }
+
+.bg-cover { background-size: cover !important; }
+
+.bg-contain { background-size: contain !important; }
+
+@media (min-width: 576px) { .bg-sm-auto { background-size: auto !important; }
+  .bg-sm-cover { background-size: cover !important; }
+  .bg-sm-contain { background-size: contain !important; } }
+
+@media (min-width: 768px) { .bg-md-auto { background-size: auto !important; }
+  .bg-md-cover { background-size: cover !important; }
+  .bg-md-contain { background-size: contain !important; } }
+
+@media (min-width: 992px) { .bg-lg-auto { background-size: auto !important; }
+  .bg-lg-cover { background-size: cover !important; }
+  .bg-lg-contain { background-size: contain !important; } }
+
+@media (min-width: 1200px) { .bg-xl-auto { background-size: auto !important; }
+  .bg-xl-cover { background-size: cover !important; }
+  .bg-xl-contain { background-size: contain !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
