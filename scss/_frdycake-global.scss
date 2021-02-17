@@ -33,6 +33,9 @@
 @import "globals/box-alignment/place-items";
 @import "globals/box-alignment/place-self";
 
+// spacing
+@import "globals/spacing/padding";
+
 @import "globals/typography";
 @import "globals/separator";
 // bootstrap
@@ -51,7 +54,6 @@
 //@import "globals/screen-readers";
 @import "globals/shadow";
 //@import "globals/sizing";
-@import "globals/spacing";
 //@import "globals/stretched-link";
 //@import "globals/text";
 //@import "globals/vertical-align";
