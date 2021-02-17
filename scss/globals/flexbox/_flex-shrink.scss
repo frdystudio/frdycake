@@ -4,7 +4,7 @@
     $var: ('shrink': 1, 'shrink-0': 0);
 
     @each $var, $flex-shrink in $var {
-      .flex#{$infix}-#{$var} { flex-grow: $flex-shrink !important; }
+      .flex#{$infix}-#{$var} { flex-shrink: $flex-shrink !important; }
     }
   }
 }
