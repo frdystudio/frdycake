@@ -1,0 +1,14 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .h#{$infix}-auto { height: auto !important; }
+    .h#{$infix}-px { height: 1px !important; }
+    .h#{$infix}-full { height: 100% !important; }
+    .h#{$infix}-screen { height: 100vw !important; }
+
+    @each $size, $length in $spacers {
+      .h#{$infix}-#{$size} { height: $length !important; }
+    }
+  }
+}
