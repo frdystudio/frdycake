@@ -5,23 +5,23 @@
     @each $size, $length in $spacers {
       .space#{$infix}-y-#{$size} {
         --frdy-space-y-reverse: 0;
-        margin-top: calc(#{$size} * calc(1 - var(--frdy-space-y-reverse)));
-        margin-bottom: calc(#{$size} * var(--frdy-space-y-reverse));
+        margin-top: calc(#{$size} * calc(1 - var(--frdy-space-y-reverse))) !important;
+        margin-bottom: calc(#{$size} * var(--frdy-space-y-reverse)) !important;
       }
       .space#{$infix}-x-#{$size} {
         --frdy-space-x-reverse: 0;
-        margin-right: calc(#{$size} * var(--frdy-space-x-reverse));
-        margin-left: calc(#{$size} * calc(1 - var(--frdy-space-x-reverse)));
+        margin-right: calc(#{$size} * var(--frdy-space-x-reverse)) !important;
+        margin-left: calc(#{$size} * calc(1 - var(--frdy-space-x-reverse))) !important;
       }
       .space#{$infix}-y-n#{$size} {
         --frdy-space-y-reverse: 0;
-        margin-top: calc(-#{$size} * calc(1 - var(--frdy-space-y-reverse)));
-        margin-bottom: calc(-#{$size} * var(--frdy-space-y-reverse));
+        margin-top: calc(-#{$size} * calc(1 - var(--frdy-space-y-reverse))) !important;
+        margin-bottom: calc(-#{$size} * var(--frdy-space-y-reverse)) !important;
       }
       .space#{$infix}-y-n#{$size} {
         --frdy-space-x-reverse: 0;
-        margin-right: calc(-#{$size} * var(--frdy-space-x-reverse));
-        margin-left: calc(-#{$size} * calc(1 - var(--frdy-space-x-reverse)));
+        margin-right: calc(-#{$size} * var(--frdy-space-x-reverse)) !important;
+        margin-left: calc(-#{$size} * calc(1 - var(--frdy-space-x-reverse))) !important;
       }
     }
   }
