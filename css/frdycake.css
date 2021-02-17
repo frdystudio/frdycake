@@ -5115,6 +5115,28 @@
   .flex-xl-column { flex-direction: column !important; }
   .flex-xl-column-reverse { flex-direction: column-reverse !important; } }
 
+.flex-wrap { flex-wrap: wrap !important; }
+
+.flex-wrap-reverse { flex-wrap: wrap-reverse !important; }
+
+.flex-nowrap { flex-wrap: nowrap !important; }
+
+@media (min-width: 576px) { .flex-sm-wrap { flex-wrap: wrap !important; }
+  .flex-sm-wrap-reverse { flex-wrap: wrap-reverse !important; }
+  .flex-sm-nowrap { flex-wrap: nowrap !important; } }
+
+@media (min-width: 768px) { .flex-md-wrap { flex-wrap: wrap !important; }
+  .flex-md-wrap-reverse { flex-wrap: wrap-reverse !important; }
+  .flex-md-nowrap { flex-wrap: nowrap !important; } }
+
+@media (min-width: 992px) { .flex-lg-wrap { flex-wrap: wrap !important; }
+  .flex-lg-wrap-reverse { flex-wrap: wrap-reverse !important; }
+  .flex-lg-nowrap { flex-wrap: nowrap !important; } }
+
+@media (min-width: 1200px) { .flex-xl-wrap { flex-wrap: wrap !important; }
+  .flex-xl-wrap-reverse { flex-wrap: wrap-reverse !important; }
+  .flex-xl-nowrap { flex-wrap: nowrap !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
