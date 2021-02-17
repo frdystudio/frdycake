@@ -1,0 +1,177 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        $var: ('0': 0%, '50': 50%, '33': 33.333333, '25': 25%, '66': 66.666667%, '75': 75%, '100': 100%);
+
+        .inset#{$infix}-auto {
+            top: auto !important;
+            right: auto !important;
+            bottom: auto !important;
+            left: auto !important;
+        }
+        .inset#{$infix}-px {
+            top: 1px !important;
+            right: 1px !important;
+            bottom: 1px !important;
+            left: 1px !important;
+        }
+        .inset#{$infix}-npx {
+            top: -1px !important;
+            right: -1px !important;
+            bottom: -1px !important;
+            left: -1px !important;
+        }
+        .inset#{$infix}-full {
+            top: 100% !important;
+            right: 100% !important;
+            bottom: 100% !important;
+            left: 100% !important;
+        }
+        .inset#{$infix}-nfull {
+            top: -100% !important;
+            right: -100% !important;
+            bottom: -100% !important;
+            left: -100% !important;
+        }
+        .inset#{$infix}-y-auto {
+            top: auto !important;
+            bottom: auto !important;
+        }
+        .inset#{$infix}-x-auto {
+            right: auto !important;
+            left: auto !important;
+        }
+        .inset#{$infix}-y-px {
+            top: 1px !important;
+            bottom: 1px !important;
+        }
+        .inset#{$infix}-y-npx {
+            top: -1px !important;
+            bottom: -1px !important;
+        }
+        .inset#{$infix}-x-px {
+            right: 1px !important;
+            left: 1px !important;
+        }
+        .inset#{$infix}-x-npx {
+            right: -1px !important;
+            left: -1px !important;
+        }
+        .inset#{$infix}-y-full {
+            top: 100% !important;
+            bottom: 100% !important;
+        }
+        .inset#{$infix}-x-full {
+            right: 100% !important;
+            left: 100% !important;
+        }
+        .inset#{$infix}-y-nfull {
+            top: -100% !important;
+            bottom: -100% !important;
+        }
+        .inset#{$infix}-x-nfull {
+            right: -100% !important;
+            left: -100% !important;
+        }
+        .top#{$infix}-full { top: 100% !important; }
+        .end#{$infix}-full { right: 100% !important; }
+        .bottom#{$infix}-full { bottom: 100% !important; }
+        .start#{$infix}-full { left: 100% !important; }
+        .top#{$infix}-nfull { top: -100% !important; }
+        .end#{$infix}-nfull { right: -100% !important; }
+        .bottom#{$infix}-nfull { bottom: -100% !important; }
+        .start#{$infix}-nfull { left: -100% !important; }
+        .top#{$infix}-auto { top: auto !important; }
+        .end#{$infix}-auto { right: auto !important; }
+        .bottom#{$infix}-auto { bottom: auto !important; }
+        .start#{$infix}-auto { left: auto !important; }
+        .top#{$infix}-px { top: 1px !important; }
+        .end#{$infix}-px { right: 1px  !important; }
+        .bottom#{$infix}-px { bottom: 1px !important; }
+        .start#{$infix}-px { left: 1px !important; }
+        .top#{$infix}-npx { top: -1px !important; }
+        .end#{$infix}-npx { right: -1px !important; }
+        .bottom#{$infix}-npx { bottom: -1px !important; }
+        .start#{$infix}-npx { left: -1px !important; }
+      
+        @each $size, $length in $spacers {
+            .inset#{$infix}-#{$size} {
+                top: $length !important;
+                right: $length !important;
+                bottom: $length !important;
+                left: $length !important;
+            }
+            .inset#{$infix}-n#{$size} {
+                top: -$length !important;
+                right: -$length !important;
+                bottom: -$length !important;
+                left: -$length !important;
+            }
+            .inset#{$infix}-y-#{$size} {
+                top: $length !important;
+                bottom: $length !important;
+            }
+            .inset#{$infix}-y-n#{$size} {
+                top: -$length !important;
+                bottom: -$length !important;
+            }
+            .inset#{$infix}-x-#{$size} {
+                right: $length !important;
+                left: $length !important;
+            } 
+            .inset#{$infix}-x-n#{$size} {
+                right: -$length !important;
+                left: -$length !important;
+            }
+            .top#{$infix}-#{$size} { top: $length !important; }
+            .end#{$infix}-#{$size} { right: $length !important; }
+            .bottom#{$infix}-#{$size} { bottom: $length !important; }
+            .start#{$infix}-#{$size} { left: $length !important; }
+            .top#{$infix}-n#{$size} { top: -$length !important; }
+            .end#{$infix}-n#{$size} { right: -$length !important; }
+            .bottom#{$infix}-n#{$size} { bottom: -$length !important; }
+            .start#{$infix}-n#{$size} { left: -$length !important; }
+        }
+
+        @each $var, $position-variable in $var {
+            .top#{$infix}-#{$var} { top: $position-variable !important; }
+            .end#{$infix}-#{$var} { right: $position-variable !important; }
+            .bottom#{$infix}-#{$var} { bottom: $position-variable !important; }
+            .start#{$infix}-#{$var} { left: $position-variable !important; }
+
+            .top#{$infix}-n#{$var} { top: -$position-variable !important; }
+            .end#{$infix}-n#{$var} { right: -$position-variable !important; }
+            .bottom#{$infix}-n#{$var} { bottom: -$position-variable !important; }
+            .start#{$infix}-n#{$var} { left: -$position-variable !important; }
+
+            .inset#{$infix}-#{$var} {
+                top: $position-variable !important;
+                right: $position-variable !important;
+                bottom: $position-variable !important;
+                left: $position-variable !important;
+            }
+            .inset#{$infix}-n#{$var} {
+                top: -$position-variable !important;
+                right: -$position-variable !important;
+                bottom: -$position-variable !important;
+                left: -$position-variable !important;
+            }
+            .inset#{$infix}-y-#{$var} {
+                top: $position-variable !important;
+                bottom: $position-variable !important;
+            }
+            .inset#{$infix}-x-#{$var} {
+                right: $position-variable !important;
+                left: $position-variable !important;
+            }
+            .inset#{$infix}-y-n#{$var} {
+                top: -$position-variable !important;
+                bottom: -$position-variable !important;
+            }
+            .inset#{$infix}-x-n#{$var} {
+                right: -$position-variable !important;
+                left: -$position-variable !important;
+            }
+        }
+    }
+}
