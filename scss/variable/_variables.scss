@@ -14,17 +14,120 @@ $black: #183B56;
 $gray: #5a7184;
 $gray-light: #B3BAC5;
 
-$primary-lighten: rgba($primary, .1);
-$secondary-lighten: rgba($secondary, .1);
-$success-lighten: rgba($success, .1);
-$info-lighten: rgba($info, .1);
-$warning-lighten: rgba($warning, .1);
-$danger-lighten: rgba($danger, .1);
+$colors: () !default;
+$colors: map-merge(
+  (
+    transparent: transparent,
+    current: currentColor,
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+    white: $white,
+    black: $black,
+    gray: $gray,
+    gray-light: $gray-light
+  ),
+  $colors
+);
 
-$white-lighten: rgba($white, .1);
-$black-lighten: rgba($black, .1);
-$gray-lighten: rgba($gray, .1);
-$gray-light-lighten: rgba($gray-light, .1);
+$colors-opacity: () !default;
+$colors-opacity: map-merge(
+  (
+    primary-1: rgba($primary, .1),
+    primary-2: rgba($primary, .2),
+    primary-3: rgba($primary, .3),
+    primary-4: rgba($primary, .4),
+    primary-5: rgba($primary, .5),
+    primary-6: rgba($primary, .6),
+    primary-7: rgba($primary, .7),
+    primary-8: rgba($primary, .8),
+    primary-9: rgba($primary, .9),
+          secondary-1: rgba($secondary, .1),
+          secondary-2: rgba($secondary, .2),
+          secondary-3: rgba($secondary, .3),
+          secondary-4: rgba($secondary, .4),
+          secondary-5: rgba($secondary, .5),
+          secondary-6: rgba($secondary, .6),
+          secondary-7: rgba($secondary, .7),
+          secondary-8: rgba($secondary, .8),
+          secondary-9: rgba($secondary, .9),
+          success-1: rgba($success, .1),
+          success-2: rgba($success, .2),
+          success-3: rgba($success, .3),
+          success-4: rgba($success, .4),
+          success-5: rgba($success, .5),
+          success-6: rgba($success, .6),
+          success-7: rgba($success, .7),
+          success-8: rgba($success, .8),
+          success-9: rgba($success, .9),
+          info-1: rgba($info, .1),
+          info-2: rgba($info, .2),
+          info-3: rgba($info, .3),
+          info-4: rgba($info, .4),
+          info-5: rgba($info, .5),
+          info-6: rgba($info, .6),
+          info-7: rgba($info, .7),
+          info-8: rgba($info, .8),
+          info-9: rgba($info, .9),
+          warning-1: rgba($warning, .1),
+          warning-2: rgba($warning, .2),
+          warning-3: rgba($warning, .3),
+          warning-4: rgba($warning, .4),
+          warning-5: rgba($warning, .5),
+          warning-6: rgba($warning, .6),
+          warning-7: rgba($warning, .7),
+          warning-8: rgba($warning, .8),
+          warning-9: rgba($warning, .9),
+          danger-1: rgba($danger, .1),
+          danger-2: rgba($danger, .2),
+          danger-3: rgba($danger, .3),
+          danger-4: rgba($danger, .4),
+          danger-5: rgba($danger, .5),
+          danger-6: rgba($danger, .6),
+          danger-7: rgba($danger, .7),
+          danger-8: rgba($danger, .8),
+          danger-9: rgba($danger, .9),
+          white-1: rgba($white, .1),
+          white-2: rgba($white, .2),
+          white-3: rgba($white, .3),
+          white-4: rgba($white, .4),
+          white-5: rgba($white, .5),
+          white-6: rgba($white, .6),
+          white-7: rgba($white, .7),
+          white-8: rgba($white, .8),
+          white-9: rgba($white, .9),
+          black-1: rgba($black, .1),
+          black-2: rgba($black, .2),
+          black-3: rgba($black, .3),
+          black-4: rgba($black, .4),
+          black-5: rgba($black, .5),
+          black-6: rgba($black, .6),
+          black-7: rgba($black, .7),
+          black-8: rgba($black, .8),
+          black-9: rgba($black, .9),
+          gray-1: rgba($gray, .1),
+          gray-2: rgba($gray, .2),
+          gray-3: rgba($gray, .3),
+          gray-4: rgba($gray, .4),
+          gray-5: rgba($gray, .5),
+          gray-6: rgba($gray, .6),
+          gray-7: rgba($gray, .7),
+          gray-8: rgba($gray, .8),
+          gray-9: rgba($gray, .9),
+          gray-light-1: rgba($gray-light, .1),
+          gray-light-2: rgba($gray-light, .2),
+          gray-light-3: rgba($gray-light, .3),
+          gray-light-4: rgba($gray-light, .4),
+          gray-light-5: rgba($gray-light, .5),
+          gray-light-6: rgba($gray-light, .6),
+          gray-light-7: rgba($gray-light, .7),
+          gray-light-8: rgba($gray-light, .8),
+          gray-light-9: rgba($gray-light, .9)
+  ), $colors-opacity
+);
 
 // Spacing
 //
