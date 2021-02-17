@@ -2,12 +2,14 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    @each $color, $background-color in $colors {
-      .bg#{$infix}-#{$color} { background-color: $background-color !important; }
-    }
+    .bg#{$infix}-transparent { background-color: transparent !important; }
+    .bg#{$infix}-current { background-color: currentColor !important; }
 
-    @each $color-opacity, $background-color in $colors-opacity {
-      .bg#{$infix}-#{$color-opacity} { background-color: $background-color !important; }
+    @each $color, $background-color in $colors {
+      .bg#{$infix}-#{$color} {
+        --frdy-bg-opacity: 1;
+        background-color: rgba($background-color, var(--frdy-bg-opacity)) !important;
+      }
     }
   }
 }
