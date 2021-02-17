@@ -57,15 +57,30 @@ $spacers: map-merge(
     18: ($spacer * 8.5), // 136px
     19: ($spacer * 9), // 144px
     20: ($spacer * 9.5), // 152px
-    21: ($spacer * 11.5), // 184px
-    22: ($spacer * 12.5), // 200px
-    23: ($spacer * 15.5), // 248px
-    24: ($spacer * 16), // 256px
-    25: ($spacer * 19), // 304px
-    26: ($spacer * 20), // 320px
-    27: ($spacer * 22), // 352px
-    28: ($spacer * 24), // 384px
-    29: ($spacer * 25) // 400px
+    21: ($spacer * 10), // 160px
+    22: ($spacer * 10.5), // 168px
+    23: ($spacer * 11), // 176px
+    24: ($spacer * 11.5), // 184px
+    25: ($spacer * 12), // 192px
+    26: ($spacer * 12.5), // 200px
+    27: ($spacer * 13), // 208px
+    28: ($spacer * 13.5), // 216px
+    29: ($spacer * 14), // 224px
+    30: ($spacer * 14.5), // 232px
+    31: ($spacer * 15), // 240px
+    32: ($spacer * 15.5), // 248px
+    33: ($spacer * 16), // 256px
+    34: ($spacer * 16.5), // 264px
+    35: ($spacer * 18), // 288px
+    36: ($spacer * 18.5), // 296px
+    37: ($spacer * 20), // 320px
+    38: ($spacer * 20.5), //328px
+    39: ($spacer * 22), // 352px
+    40: ($spacer * 22.5), // 360px
+    41: ($spacer * 24), // 384px
+    42: ($spacer * 24.5), // 392px
+    43: ($spacer * 25), // 400px
+    44: ($spacer * 25.5) // 408px
   ),
   $spacers
 );
