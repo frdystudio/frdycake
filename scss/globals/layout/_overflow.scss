@@ -1,18 +1,17 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-      
-      .overflow#{$infix}-auto { overflow: auto !important; }
-      .overflow#{$infix}-hidden { overflow: hidden !important; }
-      .overflow#{$infix}-visible { overflow: visible !important; }
-      .overflow#{$infix}-scroll { overflow: scroll !important; }
-      .overflow#{$infix}-y-auto { overflow-x: auto !important; }
-      .overflow#{$infix}-y-auto { overflow-y: auto !important; }
-      .overflow#{$infix}-x-hidden { overflow-x: hidden !important; }
-      .overflow#{$infix}-y-hidden { overflow-y: hidden !important; }
-      .overflow#{$infix}-x-visible { overflow-x: visible !important; }
-      .overflow#{$infix}-y-visible { overflow-y: visible !important; }
-      .overflow#{$infix}-x-scroll { overflow-x: scroll !important; }
-      .overflow#{$infix}-y-scroll { overflow-y: scroll !important; }
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: (
+            'auto': auto,
+            'hidden': hidden,
+            'visible': visible,
+            'scroll': scroll
+    );
+
+    @each $var, $overflow in $var {
+      .overflow#{$infix}-#{$var} { overflow: $overflow !important; }
+      .overflow#{$infix}-y-#{$var} { overflow-y: $overflow !important; }
+      .overflow#{$infix}-x-#{$var} { overflow-x: $overflow !important; }
     }
+  }
 }
