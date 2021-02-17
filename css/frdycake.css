@@ -275,6 +275,82 @@
   .object-xl-end-up { object-position: right top !important; }
   .object-xl-up { object-position: top !important; } }
 
+.overflow-auto { overflow: auto !important; }
+
+.overflow-hidden { overflow: hidden !important; }
+
+.overflow-visible { overflow: visible !important; }
+
+.overflow-scroll { overflow: scroll !important; }
+
+.overflow-y-auto { overflow-x: auto !important; }
+
+.overflow-y-auto { overflow-y: auto !important; }
+
+.overflow-x-hidden { overflow-x: hidden !important; }
+
+.overflow-y-hidden { overflow-y: hidden !important; }
+
+.overflow-x-visible { overflow-x: visible !important; }
+
+.overflow-y-visible { overflow-y: visible !important; }
+
+.overflow-x-scroll { overflow-x: scroll !important; }
+
+.overflow-y-scroll { overflow-y: scroll !important; }
+
+@media (min-width: 576px) { .overflow-sm-auto { overflow: auto !important; }
+  .overflow-sm-hidden { overflow: hidden !important; }
+  .overflow-sm-visible { overflow: visible !important; }
+  .overflow-sm-scroll { overflow: scroll !important; }
+  .overflow-sm-y-auto { overflow-x: auto !important; }
+  .overflow-sm-y-auto { overflow-y: auto !important; }
+  .overflow-sm-x-hidden { overflow-x: hidden !important; }
+  .overflow-sm-y-hidden { overflow-y: hidden !important; }
+  .overflow-sm-x-visible { overflow-x: visible !important; }
+  .overflow-sm-y-visible { overflow-y: visible !important; }
+  .overflow-sm-x-scroll { overflow-x: scroll !important; }
+  .overflow-sm-y-scroll { overflow-y: scroll !important; } }
+
+@media (min-width: 768px) { .overflow-md-auto { overflow: auto !important; }
+  .overflow-md-hidden { overflow: hidden !important; }
+  .overflow-md-visible { overflow: visible !important; }
+  .overflow-md-scroll { overflow: scroll !important; }
+  .overflow-md-y-auto { overflow-x: auto !important; }
+  .overflow-md-y-auto { overflow-y: auto !important; }
+  .overflow-md-x-hidden { overflow-x: hidden !important; }
+  .overflow-md-y-hidden { overflow-y: hidden !important; }
+  .overflow-md-x-visible { overflow-x: visible !important; }
+  .overflow-md-y-visible { overflow-y: visible !important; }
+  .overflow-md-x-scroll { overflow-x: scroll !important; }
+  .overflow-md-y-scroll { overflow-y: scroll !important; } }
+
+@media (min-width: 992px) { .overflow-lg-auto { overflow: auto !important; }
+  .overflow-lg-hidden { overflow: hidden !important; }
+  .overflow-lg-visible { overflow: visible !important; }
+  .overflow-lg-scroll { overflow: scroll !important; }
+  .overflow-lg-y-auto { overflow-x: auto !important; }
+  .overflow-lg-y-auto { overflow-y: auto !important; }
+  .overflow-lg-x-hidden { overflow-x: hidden !important; }
+  .overflow-lg-y-hidden { overflow-y: hidden !important; }
+  .overflow-lg-x-visible { overflow-x: visible !important; }
+  .overflow-lg-y-visible { overflow-y: visible !important; }
+  .overflow-lg-x-scroll { overflow-x: scroll !important; }
+  .overflow-lg-y-scroll { overflow-y: scroll !important; } }
+
+@media (min-width: 1200px) { .overflow-xl-auto { overflow: auto !important; }
+  .overflow-xl-hidden { overflow: hidden !important; }
+  .overflow-xl-visible { overflow: visible !important; }
+  .overflow-xl-scroll { overflow: scroll !important; }
+  .overflow-xl-y-auto { overflow-x: auto !important; }
+  .overflow-xl-y-auto { overflow-y: auto !important; }
+  .overflow-xl-x-hidden { overflow-x: hidden !important; }
+  .overflow-xl-y-hidden { overflow-y: hidden !important; }
+  .overflow-xl-x-visible { overflow-x: visible !important; }
+  .overflow-xl-y-visible { overflow-y: visible !important; }
+  .overflow-xl-x-scroll { overflow-x: scroll !important; }
+  .overflow-xl-y-scroll { overflow-y: scroll !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
