@@ -1,15 +1,16 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-      
-      .overscroll#{$infix}-auto { overscroll-behavior: auto !important; }
-      .overscroll#{$infix}-contain { overscroll-behavior: contain !important; }
-      .overscroll#{$infix}-none { overscroll-behavior: none !important; }
-      .overscroll#{$infix}-y-auto { overscroll-behavior-y: auto !important; }
-      .overscroll#{$infix}-y-contain { overscroll-behavior-y: contain !important; }
-      .overscroll#{$infix}-y-none { overscroll-behavior-y: none !important; }
-      .overscroll#{$infix}-x-auto { overscroll-behavior-x: auto !important; }
-      .overscroll#{$infix}-x-contain { overscroll-behavior-x: contain !important; }
-      .overscroll#{$infix}-x-none { overscroll-behavior-x: none !important; }
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: (
+            'auto': auto,
+            'contain': contain,
+            'none': none
+    );
+
+    @each $var, $overscroll-behavior in $var {
+      .overscroll#{$infix}-#{$var} { overscroll-behavior: $overscroll-behavior !important; }
+      .overscroll#{$infix}-x-#{$var} { overscroll-behavior-x: $overscroll-behavior !important; }
+      .overscroll#{$infix}-y-#{$var} { overscroll-behavior-y: $overscroll-behavior !important; }
     }
+  }
 }

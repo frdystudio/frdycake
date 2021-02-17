@@ -353,61 +353,61 @@
 
 .overscroll-auto { overscroll-behavior: auto !important; }
 
-.overscroll-contain { overscroll-behavior: contain !important; }
-
-.overscroll-none { overscroll-behavior: none !important; }
+.overscroll-x-auto { overscroll-behavior-x: auto !important; }
 
 .overscroll-y-auto { overscroll-behavior-y: auto !important; }
 
-.overscroll-y-contain { overscroll-behavior-y: contain !important; }
-
-.overscroll-y-none { overscroll-behavior-y: none !important; }
-
-.overscroll-x-auto { overscroll-behavior-x: auto !important; }
+.overscroll-contain { overscroll-behavior: contain !important; }
 
 .overscroll-x-contain { overscroll-behavior-x: contain !important; }
 
+.overscroll-y-contain { overscroll-behavior-y: contain !important; }
+
+.overscroll-none { overscroll-behavior: none !important; }
+
 .overscroll-x-none { overscroll-behavior-x: none !important; }
 
+.overscroll-y-none { overscroll-behavior-y: none !important; }
+
 @media (min-width: 576px) { .overscroll-sm-auto { overscroll-behavior: auto !important; }
-  .overscroll-sm-contain { overscroll-behavior: contain !important; }
-  .overscroll-sm-none { overscroll-behavior: none !important; }
-  .overscroll-sm-y-auto { overscroll-behavior-y: auto !important; }
-  .overscroll-sm-y-contain { overscroll-behavior-y: contain !important; }
-  .overscroll-sm-y-none { overscroll-behavior-y: none !important; }
   .overscroll-sm-x-auto { overscroll-behavior-x: auto !important; }
+  .overscroll-sm-y-auto { overscroll-behavior-y: auto !important; }
+  .overscroll-sm-contain { overscroll-behavior: contain !important; }
   .overscroll-sm-x-contain { overscroll-behavior-x: contain !important; }
-  .overscroll-sm-x-none { overscroll-behavior-x: none !important; } }
+  .overscroll-sm-y-contain { overscroll-behavior-y: contain !important; }
+  .overscroll-sm-none { overscroll-behavior: none !important; }
+  .overscroll-sm-x-none { overscroll-behavior-x: none !important; }
+  .overscroll-sm-y-none { overscroll-behavior-y: none !important; } }
 
 @media (min-width: 768px) { .overscroll-md-auto { overscroll-behavior: auto !important; }
-  .overscroll-md-contain { overscroll-behavior: contain !important; }
-  .overscroll-md-none { overscroll-behavior: none !important; }
-  .overscroll-md-y-auto { overscroll-behavior-y: auto !important; }
-  .overscroll-md-y-contain { overscroll-behavior-y: contain !important; }
-  .overscroll-md-y-none { overscroll-behavior-y: none !important; }
   .overscroll-md-x-auto { overscroll-behavior-x: auto !important; }
+  .overscroll-md-y-auto { overscroll-behavior-y: auto !important; }
+  .overscroll-md-contain { overscroll-behavior: contain !important; }
   .overscroll-md-x-contain { overscroll-behavior-x: contain !important; }
-  .overscroll-md-x-none { overscroll-behavior-x: none !important; } }
+  .overscroll-md-y-contain { overscroll-behavior-y: contain !important; }
+  .overscroll-md-none { overscroll-behavior: none !important; }
+  .overscroll-md-x-none { overscroll-behavior-x: none !important; }
+  .overscroll-md-y-none { overscroll-behavior-y: none !important; } }
 
 @media (min-width: 992px) { .overscroll-lg-auto { overscroll-behavior: auto !important; }
-  .overscroll-lg-contain { overscroll-behavior: contain !important; }
-  .overscroll-lg-none { overscroll-behavior: none !important; }
-  .overscroll-lg-y-auto { overscroll-behavior-y: auto !important; }
-  .overscroll-lg-y-contain { overscroll-behavior-y: contain !important; }
-  .overscroll-lg-y-none { overscroll-behavior-y: none !important; }
   .overscroll-lg-x-auto { overscroll-behavior-x: auto !important; }
+  .overscroll-lg-y-auto { overscroll-behavior-y: auto !important; }
+  .overscroll-lg-contain { overscroll-behavior: contain !important; }
   .overscroll-lg-x-contain { overscroll-behavior-x: contain !important; }
-  .overscroll-lg-x-none { overscroll-behavior-x: none !important; } }
+  .overscroll-lg-y-contain { overscroll-behavior-y: contain !important; }
+  .overscroll-lg-none { overscroll-behavior: none !important; }
+  .overscroll-lg-x-none { overscroll-behavior-x: none !important; }
+  .overscroll-lg-y-none { overscroll-behavior-y: none !important; } }
 
 @media (min-width: 1200px) { .overscroll-xl-auto { overscroll-behavior: auto !important; }
-  .overscroll-xl-contain { overscroll-behavior: contain !important; }
-  .overscroll-xl-none { overscroll-behavior: none !important; }
-  .overscroll-xl-y-auto { overscroll-behavior-y: auto !important; }
-  .overscroll-xl-y-contain { overscroll-behavior-y: contain !important; }
-  .overscroll-xl-y-none { overscroll-behavior-y: none !important; }
   .overscroll-xl-x-auto { overscroll-behavior-x: auto !important; }
+  .overscroll-xl-y-auto { overscroll-behavior-y: auto !important; }
+  .overscroll-xl-contain { overscroll-behavior: contain !important; }
   .overscroll-xl-x-contain { overscroll-behavior-x: contain !important; }
-  .overscroll-xl-x-none { overscroll-behavior-x: none !important; } }
+  .overscroll-xl-y-contain { overscroll-behavior-y: contain !important; }
+  .overscroll-xl-none { overscroll-behavior: none !important; }
+  .overscroll-xl-x-none { overscroll-behavior-x: none !important; }
+  .overscroll-xl-y-none { overscroll-behavior-y: none !important; } }
 
 .position-static { position: static !important; }
 
