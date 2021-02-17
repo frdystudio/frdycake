@@ -1,0 +1,35 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $size, $length in $spacers {
+      .m#{$infix}-#{$size} { margin: $length !important; }
+      .mt#{$infix}-#{$size} { margin-top: $length !important; }
+      .mr#{$infix}-#{$size} { margin-right: $length !important; }
+      .mb#{$infix}-#{$size} { margin-bottom: $length !important; }
+      .ml#{$infix}-#{$size} { margin-left: $length !important; }
+      .my#{$infix}-#{$size} {
+        margin-top: $length !important;
+        margin-bottom: $length !important;
+      }
+      .mx#{$infix}-#{$size} {
+        margin-left: $length !important;
+        margin-right: $length !important;
+      }
+
+      .m#{$infix}-n#{$size} { margin: -$length !important; }
+      .mt#{$infix}-n#{$size} { margin-top: -$length !important; }
+      .mr#{$infix}-n#{$size} { margin-right: -$length !important; }
+      .mb#{$infix}-n#{$size} { margin-bottom: -$length !important; }
+      .ml#{$infix}-n#{$size} { margin-left: -$length !important; }
+      .my#{$infix}-n#{$size} {
+        margin-top: -$length !important;
+        margin-bottom: -$length !important;
+      }
+      .mx#{$infix}-n#{$size} {
+        margin-left: -$length !important;
+        margin-right: -$length !important;
+      }
+    }
+  }
+}
