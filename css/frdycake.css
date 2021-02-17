@@ -5559,6 +5559,40 @@
   .place-content-xl-evenly { place-content: space-evenly !important; }
   .place-content-xl-stretch { place-content: stretch !important; } }
 
+.place-items-start { place-items: start !important; }
+
+.place-items-end { place-items: end !important; }
+
+.place-items-center { place-items: center !important; }
+
+.place-items-auto { place-items: auto !important; }
+
+.place-items-stretch { place-items: stretch !important; }
+
+@media (min-width: 576px) { .place-items-sm-start { place-items: start !important; }
+  .place-items-sm-end { place-items: end !important; }
+  .place-items-sm-center { place-items: center !important; }
+  .place-items-sm-auto { place-items: auto !important; }
+  .place-items-sm-stretch { place-items: stretch !important; } }
+
+@media (min-width: 768px) { .place-items-md-start { place-items: start !important; }
+  .place-items-md-end { place-items: end !important; }
+  .place-items-md-center { place-items: center !important; }
+  .place-items-md-auto { place-items: auto !important; }
+  .place-items-md-stretch { place-items: stretch !important; } }
+
+@media (min-width: 992px) { .place-items-lg-start { place-items: start !important; }
+  .place-items-lg-end { place-items: end !important; }
+  .place-items-lg-center { place-items: center !important; }
+  .place-items-lg-auto { place-items: auto !important; }
+  .place-items-lg-stretch { place-items: stretch !important; } }
+
+@media (min-width: 1200px) { .place-items-xl-start { place-items: start !important; }
+  .place-items-xl-end { place-items: end !important; }
+  .place-items-xl-center { place-items: center !important; }
+  .place-items-xl-auto { place-items: auto !important; }
+  .place-items-xl-stretch { place-items: stretch !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }

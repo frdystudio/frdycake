@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('start': start, 'end': end, 'center': center, 'auto': auto, 'stretch': stretch);
+
+    @each $var, $place-items in $var {
+      .place-items#{$infix}-#{$var} { place-items: $place-items !important; }
+    }
+  }
+}
