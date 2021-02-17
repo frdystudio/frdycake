@@ -15381,33 +15381,33 @@
   .bg-xl-local { background-attachment: local !important; }
   .bg-xl-scroll { background-attachment: scroll !important; } }
 
+.bg-clip-text { -webkit-background-clip: text !important; }
+
 .bg-clip-border { background-clip: border-box !important; }
 
 .bg-clip-padding { background-clip: padding-box !important; }
 
 .bg-clip-content { background-clip: content-box !important; }
 
-.bg-clip-text { background-clip: text !important; }
-
-@media (min-width: 576px) { .bg-clip-sm-border { background-clip: border-box !important; }
+@media (min-width: 576px) { .bg-clip-sm-text { -webkit-background-clip: text !important; }
+  .bg-clip-sm-border { background-clip: border-box !important; }
   .bg-clip-sm-padding { background-clip: padding-box !important; }
-  .bg-clip-sm-content { background-clip: content-box !important; }
-  .bg-clip-sm-text { background-clip: text !important; } }
+  .bg-clip-sm-content { background-clip: content-box !important; } }
 
-@media (min-width: 768px) { .bg-clip-md-border { background-clip: border-box !important; }
+@media (min-width: 768px) { .bg-clip-md-text { -webkit-background-clip: text !important; }
+  .bg-clip-md-border { background-clip: border-box !important; }
   .bg-clip-md-padding { background-clip: padding-box !important; }
-  .bg-clip-md-content { background-clip: content-box !important; }
-  .bg-clip-md-text { background-clip: text !important; } }
+  .bg-clip-md-content { background-clip: content-box !important; } }
 
-@media (min-width: 992px) { .bg-clip-lg-border { background-clip: border-box !important; }
+@media (min-width: 992px) { .bg-clip-lg-text { -webkit-background-clip: text !important; }
+  .bg-clip-lg-border { background-clip: border-box !important; }
   .bg-clip-lg-padding { background-clip: padding-box !important; }
-  .bg-clip-lg-content { background-clip: content-box !important; }
-  .bg-clip-lg-text { background-clip: text !important; } }
+  .bg-clip-lg-content { background-clip: content-box !important; } }
 
-@media (min-width: 1200px) { .bg-clip-xl-border { background-clip: border-box !important; }
+@media (min-width: 1200px) { .bg-clip-xl-text { -webkit-background-clip: text !important; }
+  .bg-clip-xl-border { background-clip: border-box !important; }
   .bg-clip-xl-padding { background-clip: padding-box !important; }
-  .bg-clip-xl-content { background-clip: content-box !important; }
-  .bg-clip-xl-text { background-clip: text !important; } }
+  .bg-clip-xl-content { background-clip: content-box !important; } }
 
 .bg-transparent { background-color: transparent !important; }
 
