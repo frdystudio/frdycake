@@ -14285,7 +14285,95 @@
 
 .w-max { width: max-content !important; }
 
-.w-1rem { width: !important; }
+.w-0 { width: 0 !important; }
+
+.w-1 { width: 0.25rem !important; }
+
+.w-2 { width: 0.5rem !important; }
+
+.w-3 { width: 1rem !important; }
+
+.w-4 { width: 1.5rem !important; }
+
+.w-5 { width: 2rem !important; }
+
+.w-6 { width: 2.5rem !important; }
+
+.w-7 { width: 3rem !important; }
+
+.w-8 { width: 3.5rem !important; }
+
+.w-9 { width: 4rem !important; }
+
+.w-10 { width: 4.5rem !important; }
+
+.w-11 { width: 5rem !important; }
+
+.w-12 { width: 5.5rem !important; }
+
+.w-13 { width: 6rem !important; }
+
+.w-14 { width: 6.5rem !important; }
+
+.w-15 { width: 7rem !important; }
+
+.w-16 { width: 7.5rem !important; }
+
+.w-17 { width: 8rem !important; }
+
+.w-18 { width: 8.5rem !important; }
+
+.w-19 { width: 9rem !important; }
+
+.w-20 { width: 9.5rem !important; }
+
+.w-21 { width: 10rem !important; }
+
+.w-22 { width: 10.5rem !important; }
+
+.w-23 { width: 11rem !important; }
+
+.w-24 { width: 11.5rem !important; }
+
+.w-25 { width: 12rem !important; }
+
+.w-26 { width: 12.5rem !important; }
+
+.w-27 { width: 13rem !important; }
+
+.w-28 { width: 13.5rem !important; }
+
+.w-29 { width: 14rem !important; }
+
+.w-30 { width: 14.5rem !important; }
+
+.w-31 { width: 15rem !important; }
+
+.w-32 { width: 15.5rem !important; }
+
+.w-33 { width: 16rem !important; }
+
+.w-34 { width: 16.5rem !important; }
+
+.w-35 { width: 18rem !important; }
+
+.w-36 { width: 18.5rem !important; }
+
+.w-37 { width: 20rem !important; }
+
+.w-38 { width: 20.5rem !important; }
+
+.w-39 { width: 22rem !important; }
+
+.w-40 { width: 22.5rem !important; }
+
+.w-41 { width: 24rem !important; }
+
+.w-42 { width: 24.5rem !important; }
+
+.w-43 { width: 25rem !important; }
+
+.w-44 { width: 25.5rem !important; }
 
 @media (min-width: 576px) { .w-sm-auto { width: auto !important; }
   .w-sm-px { width: 1px !important; }
@@ -14293,7 +14381,51 @@
   .w-sm-screen { width: 100vw !important; }
   .w-sm-min { width: min-content !important; }
   .w-sm-max { width: max-content !important; }
-  .w-sm-1rem { width: !important; } }
+  .w-sm-0 { width: 0 !important; }
+  .w-sm-1 { width: 0.25rem !important; }
+  .w-sm-2 { width: 0.5rem !important; }
+  .w-sm-3 { width: 1rem !important; }
+  .w-sm-4 { width: 1.5rem !important; }
+  .w-sm-5 { width: 2rem !important; }
+  .w-sm-6 { width: 2.5rem !important; }
+  .w-sm-7 { width: 3rem !important; }
+  .w-sm-8 { width: 3.5rem !important; }
+  .w-sm-9 { width: 4rem !important; }
+  .w-sm-10 { width: 4.5rem !important; }
+  .w-sm-11 { width: 5rem !important; }
+  .w-sm-12 { width: 5.5rem !important; }
+  .w-sm-13 { width: 6rem !important; }
+  .w-sm-14 { width: 6.5rem !important; }
+  .w-sm-15 { width: 7rem !important; }
+  .w-sm-16 { width: 7.5rem !important; }
+  .w-sm-17 { width: 8rem !important; }
+  .w-sm-18 { width: 8.5rem !important; }
+  .w-sm-19 { width: 9rem !important; }
+  .w-sm-20 { width: 9.5rem !important; }
+  .w-sm-21 { width: 10rem !important; }
+  .w-sm-22 { width: 10.5rem !important; }
+  .w-sm-23 { width: 11rem !important; }
+  .w-sm-24 { width: 11.5rem !important; }
+  .w-sm-25 { width: 12rem !important; }
+  .w-sm-26 { width: 12.5rem !important; }
+  .w-sm-27 { width: 13rem !important; }
+  .w-sm-28 { width: 13.5rem !important; }
+  .w-sm-29 { width: 14rem !important; }
+  .w-sm-30 { width: 14.5rem !important; }
+  .w-sm-31 { width: 15rem !important; }
+  .w-sm-32 { width: 15.5rem !important; }
+  .w-sm-33 { width: 16rem !important; }
+  .w-sm-34 { width: 16.5rem !important; }
+  .w-sm-35 { width: 18rem !important; }
+  .w-sm-36 { width: 18.5rem !important; }
+  .w-sm-37 { width: 20rem !important; }
+  .w-sm-38 { width: 20.5rem !important; }
+  .w-sm-39 { width: 22rem !important; }
+  .w-sm-40 { width: 22.5rem !important; }
+  .w-sm-41 { width: 24rem !important; }
+  .w-sm-42 { width: 24.5rem !important; }
+  .w-sm-43 { width: 25rem !important; }
+  .w-sm-44 { width: 25.5rem !important; } }
 
 @media (min-width: 768px) { .w-md-auto { width: auto !important; }
   .w-md-px { width: 1px !important; }
@@ -14301,7 +14433,51 @@
   .w-md-screen { width: 100vw !important; }
   .w-md-min { width: min-content !important; }
   .w-md-max { width: max-content !important; }
-  .w-md-1rem { width: !important; } }
+  .w-md-0 { width: 0 !important; }
+  .w-md-1 { width: 0.25rem !important; }
+  .w-md-2 { width: 0.5rem !important; }
+  .w-md-3 { width: 1rem !important; }
+  .w-md-4 { width: 1.5rem !important; }
+  .w-md-5 { width: 2rem !important; }
+  .w-md-6 { width: 2.5rem !important; }
+  .w-md-7 { width: 3rem !important; }
+  .w-md-8 { width: 3.5rem !important; }
+  .w-md-9 { width: 4rem !important; }
+  .w-md-10 { width: 4.5rem !important; }
+  .w-md-11 { width: 5rem !important; }
+  .w-md-12 { width: 5.5rem !important; }
+  .w-md-13 { width: 6rem !important; }
+  .w-md-14 { width: 6.5rem !important; }
+  .w-md-15 { width: 7rem !important; }
+  .w-md-16 { width: 7.5rem !important; }
+  .w-md-17 { width: 8rem !important; }
+  .w-md-18 { width: 8.5rem !important; }
+  .w-md-19 { width: 9rem !important; }
+  .w-md-20 { width: 9.5rem !important; }
+  .w-md-21 { width: 10rem !important; }
+  .w-md-22 { width: 10.5rem !important; }
+  .w-md-23 { width: 11rem !important; }
+  .w-md-24 { width: 11.5rem !important; }
+  .w-md-25 { width: 12rem !important; }
+  .w-md-26 { width: 12.5rem !important; }
+  .w-md-27 { width: 13rem !important; }
+  .w-md-28 { width: 13.5rem !important; }
+  .w-md-29 { width: 14rem !important; }
+  .w-md-30 { width: 14.5rem !important; }
+  .w-md-31 { width: 15rem !important; }
+  .w-md-32 { width: 15.5rem !important; }
+  .w-md-33 { width: 16rem !important; }
+  .w-md-34 { width: 16.5rem !important; }
+  .w-md-35 { width: 18rem !important; }
+  .w-md-36 { width: 18.5rem !important; }
+  .w-md-37 { width: 20rem !important; }
+  .w-md-38 { width: 20.5rem !important; }
+  .w-md-39 { width: 22rem !important; }
+  .w-md-40 { width: 22.5rem !important; }
+  .w-md-41 { width: 24rem !important; }
+  .w-md-42 { width: 24.5rem !important; }
+  .w-md-43 { width: 25rem !important; }
+  .w-md-44 { width: 25.5rem !important; } }
 
 @media (min-width: 992px) { .w-lg-auto { width: auto !important; }
   .w-lg-px { width: 1px !important; }
@@ -14309,7 +14485,51 @@
   .w-lg-screen { width: 100vw !important; }
   .w-lg-min { width: min-content !important; }
   .w-lg-max { width: max-content !important; }
-  .w-lg-1rem { width: !important; } }
+  .w-lg-0 { width: 0 !important; }
+  .w-lg-1 { width: 0.25rem !important; }
+  .w-lg-2 { width: 0.5rem !important; }
+  .w-lg-3 { width: 1rem !important; }
+  .w-lg-4 { width: 1.5rem !important; }
+  .w-lg-5 { width: 2rem !important; }
+  .w-lg-6 { width: 2.5rem !important; }
+  .w-lg-7 { width: 3rem !important; }
+  .w-lg-8 { width: 3.5rem !important; }
+  .w-lg-9 { width: 4rem !important; }
+  .w-lg-10 { width: 4.5rem !important; }
+  .w-lg-11 { width: 5rem !important; }
+  .w-lg-12 { width: 5.5rem !important; }
+  .w-lg-13 { width: 6rem !important; }
+  .w-lg-14 { width: 6.5rem !important; }
+  .w-lg-15 { width: 7rem !important; }
+  .w-lg-16 { width: 7.5rem !important; }
+  .w-lg-17 { width: 8rem !important; }
+  .w-lg-18 { width: 8.5rem !important; }
+  .w-lg-19 { width: 9rem !important; }
+  .w-lg-20 { width: 9.5rem !important; }
+  .w-lg-21 { width: 10rem !important; }
+  .w-lg-22 { width: 10.5rem !important; }
+  .w-lg-23 { width: 11rem !important; }
+  .w-lg-24 { width: 11.5rem !important; }
+  .w-lg-25 { width: 12rem !important; }
+  .w-lg-26 { width: 12.5rem !important; }
+  .w-lg-27 { width: 13rem !important; }
+  .w-lg-28 { width: 13.5rem !important; }
+  .w-lg-29 { width: 14rem !important; }
+  .w-lg-30 { width: 14.5rem !important; }
+  .w-lg-31 { width: 15rem !important; }
+  .w-lg-32 { width: 15.5rem !important; }
+  .w-lg-33 { width: 16rem !important; }
+  .w-lg-34 { width: 16.5rem !important; }
+  .w-lg-35 { width: 18rem !important; }
+  .w-lg-36 { width: 18.5rem !important; }
+  .w-lg-37 { width: 20rem !important; }
+  .w-lg-38 { width: 20.5rem !important; }
+  .w-lg-39 { width: 22rem !important; }
+  .w-lg-40 { width: 22.5rem !important; }
+  .w-lg-41 { width: 24rem !important; }
+  .w-lg-42 { width: 24.5rem !important; }
+  .w-lg-43 { width: 25rem !important; }
+  .w-lg-44 { width: 25.5rem !important; } }
 
 @media (min-width: 1200px) { .w-xl-auto { width: auto !important; }
   .w-xl-px { width: 1px !important; }
@@ -14317,7 +14537,51 @@
   .w-xl-screen { width: 100vw !important; }
   .w-xl-min { width: min-content !important; }
   .w-xl-max { width: max-content !important; }
-  .w-xl-1rem { width: !important; } }
+  .w-xl-0 { width: 0 !important; }
+  .w-xl-1 { width: 0.25rem !important; }
+  .w-xl-2 { width: 0.5rem !important; }
+  .w-xl-3 { width: 1rem !important; }
+  .w-xl-4 { width: 1.5rem !important; }
+  .w-xl-5 { width: 2rem !important; }
+  .w-xl-6 { width: 2.5rem !important; }
+  .w-xl-7 { width: 3rem !important; }
+  .w-xl-8 { width: 3.5rem !important; }
+  .w-xl-9 { width: 4rem !important; }
+  .w-xl-10 { width: 4.5rem !important; }
+  .w-xl-11 { width: 5rem !important; }
+  .w-xl-12 { width: 5.5rem !important; }
+  .w-xl-13 { width: 6rem !important; }
+  .w-xl-14 { width: 6.5rem !important; }
+  .w-xl-15 { width: 7rem !important; }
+  .w-xl-16 { width: 7.5rem !important; }
+  .w-xl-17 { width: 8rem !important; }
+  .w-xl-18 { width: 8.5rem !important; }
+  .w-xl-19 { width: 9rem !important; }
+  .w-xl-20 { width: 9.5rem !important; }
+  .w-xl-21 { width: 10rem !important; }
+  .w-xl-22 { width: 10.5rem !important; }
+  .w-xl-23 { width: 11rem !important; }
+  .w-xl-24 { width: 11.5rem !important; }
+  .w-xl-25 { width: 12rem !important; }
+  .w-xl-26 { width: 12.5rem !important; }
+  .w-xl-27 { width: 13rem !important; }
+  .w-xl-28 { width: 13.5rem !important; }
+  .w-xl-29 { width: 14rem !important; }
+  .w-xl-30 { width: 14.5rem !important; }
+  .w-xl-31 { width: 15rem !important; }
+  .w-xl-32 { width: 15.5rem !important; }
+  .w-xl-33 { width: 16rem !important; }
+  .w-xl-34 { width: 16.5rem !important; }
+  .w-xl-35 { width: 18rem !important; }
+  .w-xl-36 { width: 18.5rem !important; }
+  .w-xl-37 { width: 20rem !important; }
+  .w-xl-38 { width: 20.5rem !important; }
+  .w-xl-39 { width: 22rem !important; }
+  .w-xl-40 { width: 22.5rem !important; }
+  .w-xl-41 { width: 24rem !important; }
+  .w-xl-42 { width: 24.5rem !important; }
+  .w-xl-43 { width: 25rem !important; }
+  .w-xl-44 { width: 25.5rem !important; } }
 
 .fs-0 { font-size: 0 !important; }
 

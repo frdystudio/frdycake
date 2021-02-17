@@ -40,7 +40,8 @@
     .w#{$infix}-screen { width: 100vw !important; }
     .w#{$infix}-min { width: min-content !important; }
     .w#{$infix}-max { width: max-content !important; }
-    @each $size, $length in $spacer {
+
+    @each $size, $length in $spacers {
       .w#{$infix}-#{$size} { width: $length !important; }
     }
   }
