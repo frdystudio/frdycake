@@ -443,6 +443,22 @@
   .position-xl-relative { position: relative !important; }
   .position-xl-sticky { position: sticky !important; } }
 
+.visible { visibility: visible !important; }
+
+.invisible { visibility: hidden !important; }
+
+@media (min-width: 576px) { .visible-sm { visibility: visible !important; }
+  .invisible-sm { visibility: hidden !important; } }
+
+@media (min-width: 768px) { .visible-md { visibility: visible !important; }
+  .invisible-md { visibility: hidden !important; } }
+
+@media (min-width: 992px) { .visible-lg { visibility: visible !important; }
+  .invisible-lg { visibility: hidden !important; } }
+
+@media (min-width: 1200px) { .visible-xl { visibility: visible !important; }
+  .invisible-xl { visibility: hidden !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
