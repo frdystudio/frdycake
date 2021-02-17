@@ -5405,6 +5405,46 @@
   .justify-self-xl-stretch { justify-self: stretch !important; }
   .justify-self-xl-auto { justify-self: auto !important; } }
 
+.align-content-start { align-content: flex-start !important; }
+
+.align-content-end { align-content: flex-end !important; }
+
+.align-content-center { align-content: center !important; }
+
+.align-content-between { align-content: space-between !important; }
+
+.align-content-around { align-content: space-around !important; }
+
+.align-content-evenly { align-content: space-evenly !important; }
+
+@media (min-width: 576px) { .align-content-sm-start { align-content: flex-start !important; }
+  .align-content-sm-end { align-content: flex-end !important; }
+  .align-content-sm-center { align-content: center !important; }
+  .align-content-sm-between { align-content: space-between !important; }
+  .align-content-sm-around { align-content: space-around !important; }
+  .align-content-sm-evenly { align-content: space-evenly !important; } }
+
+@media (min-width: 768px) { .align-content-md-start { align-content: flex-start !important; }
+  .align-content-md-end { align-content: flex-end !important; }
+  .align-content-md-center { align-content: center !important; }
+  .align-content-md-between { align-content: space-between !important; }
+  .align-content-md-around { align-content: space-around !important; }
+  .align-content-md-evenly { align-content: space-evenly !important; } }
+
+@media (min-width: 992px) { .align-content-lg-start { align-content: flex-start !important; }
+  .align-content-lg-end { align-content: flex-end !important; }
+  .align-content-lg-center { align-content: center !important; }
+  .align-content-lg-between { align-content: space-between !important; }
+  .align-content-lg-around { align-content: space-around !important; }
+  .align-content-lg-evenly { align-content: space-evenly !important; } }
+
+@media (min-width: 1200px) { .align-content-xl-start { align-content: flex-start !important; }
+  .align-content-xl-end { align-content: flex-end !important; }
+  .align-content-xl-center { align-content: center !important; }
+  .align-content-xl-between { align-content: space-between !important; }
+  .align-content-xl-around { align-content: space-around !important; }
+  .align-content-xl-evenly { align-content: space-evenly !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
