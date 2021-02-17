@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('repeat': repeat, 'no-repeat': no-repeat, 'repeat-x': repeat-x, 'repeat-y': repeat-y, 'repeat-round': round, 'repeat-space': space);
+
+    @each $var, $background-repeat in $var {
+      .bg#{$infix}-#{$var} { background-repeat: $background-repeat !important; }
+    }
+  }
+}
