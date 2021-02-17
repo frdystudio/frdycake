@@ -1,13 +1,13 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-      $var: (
-              'border': border-box,
-              'content': content-box
-      );
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: (
+            'border': border-box,
+            'content': content-box
+    );
 
-      @each $var, $box-sizing in $var {
-        .box#{$infix}-#{$var} { box-sizing: $box-sizing !important; }
-      }
+    @each $var, $box-sizing in $var {
+      .box#{$infix}-#{$var} { box-sizing: $box-sizing !important; }
     }
+  }
 }
