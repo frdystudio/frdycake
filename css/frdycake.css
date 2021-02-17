@@ -5181,6 +5181,22 @@
 @media (min-width: 1200px) { .flex-xl-grow { flex-grow: 1 !important; }
   .flex-xl-grow-0 { flex-grow: 0 !important; } }
 
+.flex-shrink { flex-grow: 1 !important; }
+
+.flex-shrink-0 { flex-grow: 0 !important; }
+
+@media (min-width: 576px) { .flex-sm-shrink { flex-grow: 1 !important; }
+  .flex-sm-shrink-0 { flex-grow: 0 !important; } }
+
+@media (min-width: 768px) { .flex-md-shrink { flex-grow: 1 !important; }
+  .flex-md-shrink-0 { flex-grow: 0 !important; } }
+
+@media (min-width: 992px) { .flex-lg-shrink { flex-grow: 1 !important; }
+  .flex-lg-shrink-0 { flex-grow: 0 !important; } }
+
+@media (min-width: 1200px) { .flex-xl-shrink { flex-grow: 1 !important; }
+  .flex-xl-shrink-0 { flex-grow: 0 !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
