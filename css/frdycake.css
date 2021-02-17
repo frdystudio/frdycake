@@ -183,6 +183,40 @@
   .clear-xl-both { clear: both !important; }
   .clear-xl-none { clear: none !important; } }
 
+.object-contain { object-fit: contain !important; }
+
+.object-cover { object-fit: cover !important; }
+
+.object-fill { object-fit: fill !important; }
+
+.object-none { object-fit: none !important; }
+
+.object-scale-down { object-fit: scale-down !important; }
+
+@media (min-width: 576px) { .object-sm-contain { object-fit: contain !important; }
+  .object-sm-cover { object-fit: cover !important; }
+  .object-sm-fill { object-fit: fill !important; }
+  .object-sm-none { object-fit: none !important; }
+  .object-sm-scale-down { object-fit: scale-down !important; } }
+
+@media (min-width: 768px) { .object-md-contain { object-fit: contain !important; }
+  .object-md-cover { object-fit: cover !important; }
+  .object-md-fill { object-fit: fill !important; }
+  .object-md-none { object-fit: none !important; }
+  .object-md-scale-down { object-fit: scale-down !important; } }
+
+@media (min-width: 992px) { .object-lg-contain { object-fit: contain !important; }
+  .object-lg-cover { object-fit: cover !important; }
+  .object-lg-fill { object-fit: fill !important; }
+  .object-lg-none { object-fit: none !important; }
+  .object-lg-scale-down { object-fit: scale-down !important; } }
+
+@media (min-width: 1200px) { .object-xl-contain { object-fit: contain !important; }
+  .object-xl-cover { object-fit: cover !important; }
+  .object-xl-fill { object-fit: fill !important; }
+  .object-xl-none { object-fit: none !important; }
+  .object-xl-scale-down { object-fit: scale-down !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
