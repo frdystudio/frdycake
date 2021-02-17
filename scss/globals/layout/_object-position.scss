@@ -1,15 +1,21 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-      
-      .object#{$infix}-down { object-position: bottom !important; }
-      .object#{$infix}-center { object-position: center !important; }
-      .object#{$infix}-start { object-position: left !important; }
-      .object#{$infix}-start-down { object-position: left bottom !important; }
-      .object#{$infix}-start-up { object-position: left top !important; }
-      .object#{$infix}-end { object-position: right !important; }
-      .object#{$infix}-end-down { object-position: right bottom !important; }
-      .object#{$infix}-end-up { object-position: right top !important; }
-      .object#{$infix}-up { object-position: top !important; }
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: (
+            'top': top,
+            'bottom': bottom,
+            'center': center,
+            'start': left,
+            'start-bottom': left bottom,
+            'start-top': left top,
+            'end': right,
+            'end-bottom': right bottom,
+            'end-top': right top,
+
+    );
+
+    @each $var, $object-position in $var {
+      .object#{$infix}-#{$var} { object-position: $object-position !important; }
     }
+  }
 }

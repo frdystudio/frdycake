@@ -217,63 +217,63 @@
   .object-xl-none { object-fit: none !important; }
   .object-xl-scale-down { object-fit: scale-down !important; } }
 
-.object-down { object-position: bottom !important; }
+.object-top { object-position: top !important; }
+
+.object-bottom { object-position: bottom !important; }
 
 .object-center { object-position: center !important; }
 
 .object-start { object-position: left !important; }
 
-.object-start-down { object-position: left bottom !important; }
+.object-start-bottom { object-position: left bottom !important; }
 
-.object-start-up { object-position: left top !important; }
+.object-start-top { object-position: left top !important; }
 
 .object-end { object-position: right !important; }
 
-.object-end-down { object-position: right bottom !important; }
+.object-end-bottom { object-position: right bottom !important; }
 
-.object-end-up { object-position: right top !important; }
+.object-end-top { object-position: right top !important; }
 
-.object-up { object-position: top !important; }
-
-@media (min-width: 576px) { .object-sm-down { object-position: bottom !important; }
+@media (min-width: 576px) { .object-sm-top { object-position: top !important; }
+  .object-sm-bottom { object-position: bottom !important; }
   .object-sm-center { object-position: center !important; }
   .object-sm-start { object-position: left !important; }
-  .object-sm-start-down { object-position: left bottom !important; }
-  .object-sm-start-up { object-position: left top !important; }
+  .object-sm-start-bottom { object-position: left bottom !important; }
+  .object-sm-start-top { object-position: left top !important; }
   .object-sm-end { object-position: right !important; }
-  .object-sm-end-down { object-position: right bottom !important; }
-  .object-sm-end-up { object-position: right top !important; }
-  .object-sm-up { object-position: top !important; } }
+  .object-sm-end-bottom { object-position: right bottom !important; }
+  .object-sm-end-top { object-position: right top !important; } }
 
-@media (min-width: 768px) { .object-md-down { object-position: bottom !important; }
+@media (min-width: 768px) { .object-md-top { object-position: top !important; }
+  .object-md-bottom { object-position: bottom !important; }
   .object-md-center { object-position: center !important; }
   .object-md-start { object-position: left !important; }
-  .object-md-start-down { object-position: left bottom !important; }
-  .object-md-start-up { object-position: left top !important; }
+  .object-md-start-bottom { object-position: left bottom !important; }
+  .object-md-start-top { object-position: left top !important; }
   .object-md-end { object-position: right !important; }
-  .object-md-end-down { object-position: right bottom !important; }
-  .object-md-end-up { object-position: right top !important; }
-  .object-md-up { object-position: top !important; } }
+  .object-md-end-bottom { object-position: right bottom !important; }
+  .object-md-end-top { object-position: right top !important; } }
 
-@media (min-width: 992px) { .object-lg-down { object-position: bottom !important; }
+@media (min-width: 992px) { .object-lg-top { object-position: top !important; }
+  .object-lg-bottom { object-position: bottom !important; }
   .object-lg-center { object-position: center !important; }
   .object-lg-start { object-position: left !important; }
-  .object-lg-start-down { object-position: left bottom !important; }
-  .object-lg-start-up { object-position: left top !important; }
+  .object-lg-start-bottom { object-position: left bottom !important; }
+  .object-lg-start-top { object-position: left top !important; }
   .object-lg-end { object-position: right !important; }
-  .object-lg-end-down { object-position: right bottom !important; }
-  .object-lg-end-up { object-position: right top !important; }
-  .object-lg-up { object-position: top !important; } }
+  .object-lg-end-bottom { object-position: right bottom !important; }
+  .object-lg-end-top { object-position: right top !important; } }
 
-@media (min-width: 1200px) { .object-xl-down { object-position: bottom !important; }
+@media (min-width: 1200px) { .object-xl-top { object-position: top !important; }
+  .object-xl-bottom { object-position: bottom !important; }
   .object-xl-center { object-position: center !important; }
   .object-xl-start { object-position: left !important; }
-  .object-xl-start-down { object-position: left bottom !important; }
-  .object-xl-start-up { object-position: left top !important; }
+  .object-xl-start-bottom { object-position: left bottom !important; }
+  .object-xl-start-top { object-position: left top !important; }
   .object-xl-end { object-position: right !important; }
-  .object-xl-end-down { object-position: right bottom !important; }
-  .object-xl-end-up { object-position: right top !important; }
-  .object-xl-up { object-position: top !important; } }
+  .object-xl-end-bottom { object-position: right bottom !important; }
+  .object-xl-end-top { object-position: right top !important; } }
 
 .overflow-auto { overflow: auto !important; }
 
