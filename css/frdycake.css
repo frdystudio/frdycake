@@ -5593,6 +5593,40 @@
   .place-items-xl-auto { place-items: auto !important; }
   .place-items-xl-stretch { place-items: stretch !important; } }
 
+.place-self-start { place-self: start !important; }
+
+.place-self-end { place-self: end !important; }
+
+.place-self-center { place-self: center !important; }
+
+.place-self-auto { place-self: auto !important; }
+
+.place-self-stretch { place-self: stretch !important; }
+
+@media (min-width: 576px) { .place-self-sm-start { place-self: start !important; }
+  .place-self-sm-end { place-self: end !important; }
+  .place-self-sm-center { place-self: center !important; }
+  .place-self-sm-auto { place-self: auto !important; }
+  .place-self-sm-stretch { place-self: stretch !important; } }
+
+@media (min-width: 768px) { .place-self-md-start { place-self: start !important; }
+  .place-self-md-end { place-self: end !important; }
+  .place-self-md-center { place-self: center !important; }
+  .place-self-md-auto { place-self: auto !important; }
+  .place-self-md-stretch { place-self: stretch !important; } }
+
+@media (min-width: 992px) { .place-self-lg-start { place-self: start !important; }
+  .place-self-lg-end { place-self: end !important; }
+  .place-self-lg-center { place-self: center !important; }
+  .place-self-lg-auto { place-self: auto !important; }
+  .place-self-lg-stretch { place-self: stretch !important; } }
+
+@media (min-width: 1200px) { .place-self-xl-start { place-self: start !important; }
+  .place-self-xl-end { place-self: end !important; }
+  .place-self-xl-center { place-self: center !important; }
+  .place-self-xl-auto { place-self: auto !important; }
+  .place-self-xl-stretch { place-self: stretch !important; } }
+
 .fs-0 { font-size: 0 !important; }
 
 .fs-1 { font-size: 0.25rem !important; }
