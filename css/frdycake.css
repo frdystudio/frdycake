@@ -15579,63 +15579,63 @@
   .bg-xl-opacity-95 { --frdy-bg-opacity: .95 !important; }
   .bg-xl-opacity-100 { --frdy-bg-opacity: 1 !important; } }
 
-.bg-position-bottom { background-position: bottom !important; }
+.bg-bottom { background-position: bottom !important; }
 
-.bg-position-center { background-position: center !important; }
+.bg-center { background-position: center !important; }
 
-.bg-position-left { background-position: left !important; }
+.bg-left { background-position: left !important; }
 
-.bg-position-left-bottom { background-position: left bottom !important; }
+.bg-left-bottom { background-position: left bottom !important; }
 
-.bg-position-left-top { background-position: left top !important; }
+.bg-left-top { background-position: left top !important; }
 
-.bg-position-right { background-position: right !important; }
+.bg-right { background-position: right !important; }
 
-.bg-position-right-bottom { background-position: right bottom !important; }
+.bg-right-bottom { background-position: right bottom !important; }
 
-.bg-position-right-top { background-position: right top !important; }
+.bg-right-top { background-position: right top !important; }
 
-.bg-position-top { background-position: top !important; }
+.bg-top { background-position: top !important; }
 
-@media (min-width: 576px) { .bg-sm-position-bottom { background-position: bottom !important; }
-  .bg-sm-position-center { background-position: center !important; }
-  .bg-sm-position-left { background-position: left !important; }
-  .bg-sm-position-left-bottom { background-position: left bottom !important; }
-  .bg-sm-position-left-top { background-position: left top !important; }
-  .bg-sm-position-right { background-position: right !important; }
-  .bg-sm-position-right-bottom { background-position: right bottom !important; }
-  .bg-sm-position-right-top { background-position: right top !important; }
-  .bg-sm-position-top { background-position: top !important; } }
+@media (min-width: 576px) { .bg-sm-bottom { background-position: bottom !important; }
+  .bg-sm-center { background-position: center !important; }
+  .bg-sm-left { background-position: left !important; }
+  .bg-sm-left-bottom { background-position: left bottom !important; }
+  .bg-sm-left-top { background-position: left top !important; }
+  .bg-sm-right { background-position: right !important; }
+  .bg-sm-right-bottom { background-position: right bottom !important; }
+  .bg-sm-right-top { background-position: right top !important; }
+  .bg-sm-top { background-position: top !important; } }
 
-@media (min-width: 768px) { .bg-md-position-bottom { background-position: bottom !important; }
-  .bg-md-position-center { background-position: center !important; }
-  .bg-md-position-left { background-position: left !important; }
-  .bg-md-position-left-bottom { background-position: left bottom !important; }
-  .bg-md-position-left-top { background-position: left top !important; }
-  .bg-md-position-right { background-position: right !important; }
-  .bg-md-position-right-bottom { background-position: right bottom !important; }
-  .bg-md-position-right-top { background-position: right top !important; }
-  .bg-md-position-top { background-position: top !important; } }
+@media (min-width: 768px) { .bg-md-bottom { background-position: bottom !important; }
+  .bg-md-center { background-position: center !important; }
+  .bg-md-left { background-position: left !important; }
+  .bg-md-left-bottom { background-position: left bottom !important; }
+  .bg-md-left-top { background-position: left top !important; }
+  .bg-md-right { background-position: right !important; }
+  .bg-md-right-bottom { background-position: right bottom !important; }
+  .bg-md-right-top { background-position: right top !important; }
+  .bg-md-top { background-position: top !important; } }
 
-@media (min-width: 992px) { .bg-lg-position-bottom { background-position: bottom !important; }
-  .bg-lg-position-center { background-position: center !important; }
-  .bg-lg-position-left { background-position: left !important; }
-  .bg-lg-position-left-bottom { background-position: left bottom !important; }
-  .bg-lg-position-left-top { background-position: left top !important; }
-  .bg-lg-position-right { background-position: right !important; }
-  .bg-lg-position-right-bottom { background-position: right bottom !important; }
-  .bg-lg-position-right-top { background-position: right top !important; }
-  .bg-lg-position-top { background-position: top !important; } }
+@media (min-width: 992px) { .bg-lg-bottom { background-position: bottom !important; }
+  .bg-lg-center { background-position: center !important; }
+  .bg-lg-left { background-position: left !important; }
+  .bg-lg-left-bottom { background-position: left bottom !important; }
+  .bg-lg-left-top { background-position: left top !important; }
+  .bg-lg-right { background-position: right !important; }
+  .bg-lg-right-bottom { background-position: right bottom !important; }
+  .bg-lg-right-top { background-position: right top !important; }
+  .bg-lg-top { background-position: top !important; } }
 
-@media (min-width: 1200px) { .bg-xl-position-bottom { background-position: bottom !important; }
-  .bg-xl-position-center { background-position: center !important; }
-  .bg-xl-position-left { background-position: left !important; }
-  .bg-xl-position-left-bottom { background-position: left bottom !important; }
-  .bg-xl-position-left-top { background-position: left top !important; }
-  .bg-xl-position-right { background-position: right !important; }
-  .bg-xl-position-right-bottom { background-position: right bottom !important; }
-  .bg-xl-position-right-top { background-position: right top !important; }
-  .bg-xl-position-top { background-position: top !important; } }
+@media (min-width: 1200px) { .bg-xl-bottom { background-position: bottom !important; }
+  .bg-xl-center { background-position: center !important; }
+  .bg-xl-left { background-position: left !important; }
+  .bg-xl-left-bottom { background-position: left bottom !important; }
+  .bg-xl-left-top { background-position: left top !important; }
+  .bg-xl-right { background-position: right !important; }
+  .bg-xl-right-bottom { background-position: right bottom !important; }
+  .bg-xl-right-top { background-position: right top !important; }
+  .bg-xl-top { background-position: top !important; } }
 
 .fs-0 { font-size: 0 !important; }
 
