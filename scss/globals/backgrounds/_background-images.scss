@@ -1,0 +1,16 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .bg-none { background-image: none; }
+    .bg-gradient-to-t { background-image: linear-gradient(to top, var(--frdy-gradient-stops)) !important;}
+    .bg-gradient-to-tr { background-image: linear-gradient(to top right, var(--frdy-gradient-stops)) !important; }
+    .bg-gradient-to-r { background-image: linear-gradient(to right, var(--frdy-gradient-stops)) !important; }
+    .bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--frdy-gradient-stops)) !important; }
+    .bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--frdy-gradient-stops)) !important; }
+    .bg-gradient-to-bl { background-image: linear-gradient(to bottom left, var(--frdy-gradient-stops)) !important; }
+    .bg-gradient-to-l { background-image: linear-gradient(to left, var(--frdy-gradient-stops)) !important; }
+    .bg-gradient-to-tl { background-image: linear-gradient(to top left, var(--frdy-gradient-stops)) !important; }
+
+  }
+}
