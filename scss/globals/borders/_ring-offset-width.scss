@@ -1,0 +1,13 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '8': 8);
+
+    @each $var, $box-shadow in $var {
+      .ring#{$infix}-offset-#{$var} {
+        --frdy-ring-offset-width: #{$box-shadow}px;
+        box-shadow: 0 0 0 var(--frdy-ring-offset-width) var(--frdy-offset-color), var(--frdy-ring-shadow);
+      }
+    }
+  }
+}
