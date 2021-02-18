@@ -53,3 +53,17 @@ $transitionTimingFunction: map-merge((
   'out': cubic-bezier(0, 0, 0.2, 1),
   'in-out': cubic-bezier(0.4, 0, 0.2, 1)
 ), $transitionTimingFunction);
+
+// Rotate deg
+$transformRotate: () !default;
+$transformRotate: map-merge((
+  '0': 0deg,
+  '1': 1deg,
+  '2': 2deg,
+  '3': 3deg,
+  '6': 6deg,
+  '12': 12deg,
+  '45': 45deg,
+  '90': 90deg,
+  '180': 180deg
+), $transformRotate);
