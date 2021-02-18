@@ -1,0 +1,16 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('transparent': transparent, 'current': currentColor);
+
+    @each $var, $ring-color in $var {
+      .ring#{$infix}-#{$var} { --frdy-ring-color: #{$ring-color} !important; }
+    }
+
+    @each $colors, $ring-color in $colors {
+      .ring#{$infix}-#{$colors} {
+        --frdy-ring-color: rgba(#{$ring-color}, var(--frdy-ring-opacity)) !important;
+      }
+    }
+  }
+}
