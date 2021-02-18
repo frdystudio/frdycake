@@ -1,11 +1,16 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('transparent': transparent, 'current': currentColor);
+
+    @each $var, $border-color in $var {
+      .border#{$infix}-#{$var} { border-color: $border-color !important; }
+    }
 
     @each $colors, $border-color in $colors {
       .border#{$infix}-#{$colors} {
         --frdy-border-opacity: 1;
-        border-color: rgba($border-color, var(--frdy-border-opacity));
+        border-color: rgba($border-color, var(--frdy-border-opacity)) !important;
       }
     }
   }
