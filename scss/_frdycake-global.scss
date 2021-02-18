@@ -75,9 +75,10 @@
 @import "globals/borders/ring-offset-width";
 @import "globals/borders/ring-offset-color";
 
+// Effects
+@import "globals/effects/box-shadow";
+
 @import "globals/typography";
 @import "globals/separator";
 // bootstrap
-//@import "globals/borders";
-@import "globals/shadow";
 @import "globals/clip-path";
