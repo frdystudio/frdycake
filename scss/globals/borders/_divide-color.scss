@@ -4,11 +4,11 @@
     $var: ('transparent': transparent, 'current': currentColor);
 
     @each $var, $border-color in $var {
-      .divide#{$infix}-#{$var} { border-color: $border-color !important; }
+      .divide#{$infix}-#{$var} > * + * { border-color: $border-color !important; }
     }
 
     @each $colors, $border-color in $colors {
-      .divide#{$infix}-#{$colors} {
+      .divide#{$infix}-#{$colors} > * + * {
         --frdy-divide-opacity: 1;
         border-color: rgba($border-color, var(--frdy-divide-opacity)) !important;
       }
