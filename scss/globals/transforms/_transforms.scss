@@ -1,0 +1,29 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .transform#{$infix}-none { transform: none !important; }
+
+    .transform#{$infix} {
+      --frdy-translate-x: 0;
+      --frdy-translate-y: 0;
+      --frdy-rotate: 0;
+      --frdy-skew-x: 0;
+      --frdy-skew-y: 0;
+      --frdy-scale-x: 1;
+      --frdy-scale-y: 1;
+      transform: translateX(var(--frdy-translate-x)) translateY(var(--frdy-translate-y)) rotate(var(--frdy-rotate)) skewX(var(--frdy-skew-x)) skewY(var(--frdy-skew-y)) scaleX(var(--frdy-scale-x)) scaleY(var(--frdy-scale-y));
+    }
+
+    .transform#{$infix}-gpu {
+      --frdy-translate-x: 0;
+      --frdy-translate-y: 0;
+      --frdy-rotate: 0;
+      --frdy-skew-x: 0;
+      --frdy-skew-y: 0;
+      --frdy-scale-x: 1;
+      --frdy-scale-y: 1;
+      transform: translate3d(var(--frdy-translate-x), var(--frdy-translate-y), 0) rotate(var(--frdy-rotate)) skewX(var(--frdy-skew-x)) skewY(var(--frdy-skew-y)) scaleX(var(--frdy-scale-x)) scaleY(var(--frdy-scale-y));
+    }
+  }
+}
