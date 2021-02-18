@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('auto': auto, 'fixed': fixed);
+
+    @each $var, $table-layout in $var {
+      .table#{$infix}-#{$var} { table-layout: $table-layout !important; }
+    }
+  }
+}
