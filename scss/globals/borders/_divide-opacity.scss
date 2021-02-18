@@ -1,0 +1,21 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .divide#{$infix}-opacity-0 { --frdy-divide-opacity: 0 !important; }
+    .divide#{$infix}-opacity-5 { --frdy-divide-opacity: .05 !important; }
+    .divide#{$infix}-opacity-10 { --frdy-divide-opacity: .1 !important; }
+    .divide#{$infix}-opacity-20 { --frdy-divide-opacity: .2 !important; }
+    .divide#{$infix}-opacity-25 { --frdy-divide-opacity: .25 !important; }
+    .divide#{$infix}-opacity-30 { --frdy-divide-opacity: .3 !important; }
+    .divide#{$infix}-opacity-40 { --frdy-divide-opacity: .4 !important; }
+    .divide#{$infix}-opacity-50 { --frdy-divide-opacity: .5 !important; }
+    .divide#{$infix}-opacity-60 { --frdy-divide-opacity: .6 !important; }
+    .divide#{$infix}-opacity-70 { --frdy-divide-opacity: .7 !important; }
+    .divide#{$infix}-opacity-75 { --frdy-divide-opacity: .75 !important; }
+    .divide#{$infix}-opacity-80 { --frdy-divide-opacity: .8 !important; }
+    .divide#{$infix}-opacity-90 { --frdy-divide-opacity: .9 !important; }
+    .divide#{$infix}-opacity-95 { --frdy-divide-opacity: .95 !important; }
+    .divide#{$infix}-opacity-100 { --frdy-divide-opacity: 1 !important; }
+  }
+}
