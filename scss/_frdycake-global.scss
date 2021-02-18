@@ -59,9 +59,12 @@
 @import "globals/backgrounds/background-images";
 @import "globals/backgrounds/gradient-color-stops";
 
+// borders
+@import "globals/borders/border-radius";
+
 @import "globals/typography";
 @import "globals/separator";
 // bootstrap
-@import "globals/borders";
+//@import "globals/borders";
 @import "globals/shadow";
 @import "globals/clip-path";

@@ -32,6 +32,18 @@ $colors: map-merge(
   $colors
 );
 
+// Border
+$border: 1rem !default;
+$borders: () !default;
+$borders: map-merge((
+  0: 0,
+  1: ($border * .25), // 4px
+  2: ($border * .5), // 8px
+  3: $border, // 16px
+  4: ($border * 1.5), // 24px
+  5: ($border * 2) // 32px
+), $borders);
+
 // Spacing
 //
 // Control the default styling of most Bootstrap elements by modifying these

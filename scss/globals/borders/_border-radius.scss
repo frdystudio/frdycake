@@ -1,0 +1,80 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('circle': 50%, 'pill': 50px );
+
+    .rounded#{$infix} { border-radius: 1rem !important; }
+    .rounded#{$infix}-top-start-none { border-top-left-radius: 0 !important; }
+    .rounded#{$infix}-top-end-none { border-top-right-radius: 0 !important; }
+    .rounded#{$infix}-bottom-end-none { border-bottom-right-radius: 0 !important; }
+    .rounded#{$infix}-bottom-start-none { border-bottom-left-radius: 0 !important; }
+
+    .rounded#{$infix}-top-none {
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+    }
+    .rounded#{$infix}-end-none {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    .rounded#{$infix}-bottom-none {
+      border-bottom-right-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+    .rounded#{$infix}-start-none {
+      border-bottom-left-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+    }
+
+    .rounded#{$infix}-top-start-full { border-top-left-radius: 50% !important; }
+    .rounded#{$infix}-top-end-full { border-top-right-radius: 50% !important; }
+    .rounded#{$infix}-bottom-end-full { border-bottom-right-radius: 50% !important; }
+    .rounded#{$infix}-bottom-start-full { border-bottom-left-radius: 50% !important; }
+
+    .rounded#{$infix}-top-full {
+      border-top-left-radius: 50% !important;
+      border-top-right-radius: 50% !important;
+    }
+    .rounded#{$infix}-end-full {
+      border-top-right-radius: 50% !important;
+      border-bottom-right-radius: 50% !important;
+    }
+    .rounded#{$infix}-bottom-full {
+      border-bottom-right-radius: 50% !important;
+      border-bottom-left-radius: 50% !important;
+    }
+    .rounded#{$infix}-start-full {
+      border-bottom-left-radius: 50% !important;
+      border-top-left-radius: 50% !important;
+    }
+
+    @each $borders, $border-radius in $borders {
+      .rounded#{$infix}-#{$borders} { border-radius: $border-radius !important; }
+      .rounded#{$infix}-top-#{$borders} {
+        border-top-left-radius: $border-radius !important;
+        border-top-right-radius: $border-radius !important;
+      }
+      .rounded#{$infix}-end-#{$borders} {
+        border-top-right-radius: $border-radius !important;
+        border-bottom-right-radius: $border-radius !important;
+      }
+      .rounded#{$infix}-bottom-#{$borders} {
+        border-bottom-right-radius: $border-radius !important;
+        border-bottom-left-radius: $border-radius !important;
+      }
+      .rounded#{$infix}-start-#{$borders} {
+        border-bottom-left-radius: $border-radius !important;
+        border-top-left-radius: $border-radius !important;
+      }
+
+      .rounded#{$infix}-top-start-#{$borders} { border-top-left-radius: $border-radius !important; }
+      .rounded#{$infix}-top-end-#{$borders} { border-top-right-radius: $border-radius !important; }
+      .rounded#{$infix}-bottom-end-#{$borders} { border-bottom-right-radius: $border-radius !important; }
+      .rounded#{$infix}-bottom-start-#{$borders} { border-bottom-left-radius: $border-radius !important; }
+    }
+
+    @each $var, $border-radius in $var {
+      .rounded#{$infix}-#{$var} { border-radius: $border-radius !important; }
+    }
+  }
+}
