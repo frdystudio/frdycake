@@ -1,0 +1,21 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-opacity-0 { --frdy-border-opacity: 0 !important; }
+    .border#{$infix}-opacity-5 { --frdy-border-opacity: .05 !important; }
+    .border#{$infix}-opacity-10 { --frdy-border-opacity: .1 !important; }
+    .border#{$infix}-opacity-20 { --frdy-border-opacity: .2 !important; }
+    .border#{$infix}-opacity-25 { --frdy-border-opacity: .25 !important; }
+    .border#{$infix}-opacity-30 { --frdy-border-opacity: .3 !important; }
+    .border#{$infix}-opacity-40 { --frdy-border-opacity: .4 !important; }
+    .border#{$infix}-opacity-50 { --frdy-border-opacity: .5 !important; }
+    .border#{$infix}-opacity-60 { --frdy-border-opacity: .6 !important; }
+    .border#{$infix}-opacity-70 { --frdy-border-opacity: .7 !important; }
+    .border#{$infix}-opacity-75 { --frdy-border-opacity: .75 !important; }
+    .border#{$infix}-opacity-80 { --frdy-border-opacity: .8 !important; }
+    .border#{$infix}-opacity-90 { --frdy-border-opacity: .9 !important; }
+    .border#{$infix}-opacity-95 { --frdy-border-opacity: .95 !important; }
+    .border#{$infix}-opacity-100 { --frdy-border-opacity: 1 !important; }
+  }
+}
