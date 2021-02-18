@@ -3,20 +3,20 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $divideWidth, $divide-width in $divideWidth {
-      .divide#{$infix}-y-#{$divideWidth} {
+      .divide#{$infix}-y-#{$divideWidth} > * + * {
         --frdy-divide-y-reverse: 0;
         border-top-width: calc(#{$divide-width} * calc(1 - var(--frdy-divide-y-reverse))) !important;
         border-bottom-width: calc(#{$divide-width} * var(--frdy-divide-y-reverse)) !important;
       }
 
-      .divide#{$infix}-x-#{$divide-width} {
+      .divide#{$infix}-x-#{$divide-width} > * + * {
         --frdy-divide-x-reverse: 0;
         border-right-width: calc(#{$divide-width} * var(--frdy-divide-x-reverse)) !important;
         border-left-width: calc(#{$divide-width} * calc(1 - var(--frdy-divide-x-reverse))) !important;
       }
 
-      .divide#{$infix}-y-reverse { --frdy-divide-y-reverse: 1; }
-      .divide#{$infix}-x-reverse { --frdy-divide-x-reverse: 1; }
+      .divide#{$infix}-y-reverse > * + * { --frdy-divide-y-reverse: 1; }
+      .divide#{$infix}-x-reverse > * + * { --frdy-divide-x-reverse: 1; }
     }
   }
 }
