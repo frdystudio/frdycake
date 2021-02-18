@@ -1,0 +1,19 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: (
+      'auto': auto,
+      'default': default,
+      'pointer': pointer,
+      'wait': wait,
+      'text': text,
+      'move': move,
+      'help': help,
+      'not-allowed': not-allowed
+    );
+
+    @each $var, $cursor in $var {
+      .cursor#{$infix}-#{$var} { cursor: $cursor !important; }
+    }
+  }
+}
