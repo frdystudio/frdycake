@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('solid': solid, 'dashed': dashed, 'dotted': dotted, 'double': double, 'none': none);
+
+    @each $var, $border-style in $var {
+      .border#{$infix}-#{$var} { border-style: $border-style !important; }
+    }
+  }
+}
