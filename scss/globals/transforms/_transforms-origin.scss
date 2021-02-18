@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('center': center, 'top': top, 'top-end': top right, 'end': right, 'bottom-end': bottom right, 'bottom': bottom, 'bottom-start': bottom left, 'start': left, 'top-start': top left);
+
+    @each $var, $transform-origin in $var {
+      .origin#{$infix}-#{$var} { transform-origin: $transform-origin !important; }
+    }
+  }
+}
