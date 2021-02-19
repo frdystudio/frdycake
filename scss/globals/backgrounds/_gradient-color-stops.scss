@@ -2,6 +2,28 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
+    .from#{$infix}-transparent {
+      --frdy-gradient-from: transparent;
+      --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(0, 0, 0, 0));
+    }
+    .from#{$infix}-current {
+      --frdy-gradient-from: currentColor;
+      --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(255, 255, 255, 0));
+    }
+    .via#{$infix}-transparent { --frdy-gradient-stops: var(--frdy-gradient-from), transparent, var(--frdy-gradient-to, rgba(0, 0, 0, 0)); }
+    .via#{$infix}-current { --frdy-gradient-stops: var(--frdy-gradient-from), currentColor, var(--frdy-gradient-to, rgba(255, 255, 255, 0)); }
+    .to-transparent	{ --frdy-gradient-to: transparent; }
+    .to-current	{ --frdy-gradient-to: currentColor; }
 
+    @each $colors, $gradient-from in $colors {
+      .from#{$infix}-#{$colors} {
+        --frdy-gradient-from: #{$gradient-from};
+        --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(#{$gradient-from}, 0));
+      }
+
+      .via#{$infix}-#{$colors} { --frdy-gradient-stops: var(--frdy-gradient-from), #{$gradient-from}, var(--frdy-gradient-to, rgba(#{$gradient-from}, 0)); }
+
+      .to#{$infix}-#{$colors} { --frdy-gradient-to: #{$gradient-from}; }
+    }
   }
 }
