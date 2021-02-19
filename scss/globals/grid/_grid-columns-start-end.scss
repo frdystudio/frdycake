@@ -1,33 +1,14 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-    $var-grid: (
-      'auto': auto,
-      'span-1': span 1 / span 1,
-      'span-2': span 2 / span 2,
-      'span-3': span 3 / span 3,
-      'span-4': span 4 / span 4,
-      'span-5': span 5 / span 5,
-      'span-6': span 6 / span 6,
-      'span-7': span 7 / span 7,
-      'span-8': span 8 / span 8,
-      'span-9': span 9 / span 9,
-      'span-10': span 10 / span 10,
-      'span-11': span 11 / span 11,
-      'span-12': span 12 / span 12,
-      'span-full': 1 / -1
-    );
-    $var-grid-column: (
-      '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, '11': 11, '12': 12, '13': 13, 'auto': auto
-    );
 
-    @each $var-grid, $grid-column in $var-grid {
-      .col#{$infix}-#{$var-grid} { grid-column: $grid-column !important; }
+    @each $gridSpan, $grid-column in $gridSpan {
+      .col#{$infix}-#{$gridSpan} { grid-column: $grid-column !important; }
     }
 
-    @each $var-grid-column, $grid-column in $var-grid-column {
-      .col#{$infix}-start-#{$var-grid-column} { grid-column-start: $grid-column !important; }
-      .col#{$infix}-end-#{$var-grid-column} { grid-column-end: $grid-column !important; }
+    @each $gridNumber, $grid-column in $gridNumber {
+      .col#{$infix}-start-#{$gridNumber} { grid-column-start: $grid-column !important; }
+      .col#{$infix}-end-#{$gridNumber} { grid-column-end: $grid-column !important; }
     }
   }
 }
