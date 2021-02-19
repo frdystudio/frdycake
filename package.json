@@ -1,7 +1,7 @@
 {
   "name": "frdycake",
-  "version": "1.0.0-alpha",
-  "description": "frdycake is a CSS Utility first ",
+  "version": "1.0.0-beta",
+  "description": "frdyCake is a CSS Utility first ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
