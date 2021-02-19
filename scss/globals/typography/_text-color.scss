@@ -12,6 +12,11 @@
         --frdy-text-opacity: 1;
         color: rgba($text-color, var(--frdy-text-opacity));
       }
+
+      .link#{$infix}-#{$colors} {
+        --frdy-text-opacity: 1;
+        color: rgba($text-color, var(--frdy-text-opacity));
+      }
     }
   }
 }
