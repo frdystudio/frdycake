@@ -1,0 +1,15 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: (
+      'row': row,
+      'col': column,
+      'row-dense': row dense,
+      'col-dense':column dense
+    );
+
+    @each $var, $grid-auto-flow in $var {
+      .grid#{$infix}-flow-#{$var} { grid-auto-flow: $grid-auto-flow !important; }
+    }
+  }
+}
