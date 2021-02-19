@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('none': none, 'disc': disc, 'decimal': decimal);
+
+    @each $var, $list-style-type in $var {
+      .list#{$infix}-#{$var} { list-style-type: $list-style-type !important; }
+    }
+  }
+}
