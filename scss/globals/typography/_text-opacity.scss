@@ -4,6 +4,7 @@
 
     @each $opacity, $text-opacity in $opacity {
       .text#{$infix}-opacity-#{$opacity} { --frdy-text-opacity: #{$text-opacity} !important; }
+      .link#{$infix}-opacity-#{$opacity} { --frdy-text-opacity: #{$text-opacity} !important; }
     }
   }
 }
