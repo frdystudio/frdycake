@@ -1,0 +1,17 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('transparent': transparent, 'current': currentColor);
+
+    @each $var, $text-color in $var {
+      .text#{$infix}-#{$var} { color: $text-color !important; }
+    }
+
+    @each $colors, $text-color in $colors {
+      .text#{$infix}-#{$colors} {
+        --frdy-text-opacity: 1;
+        color: rgba($text-color, var(--frdy-text-opacity));
+      }
+    }
+  }
+}
