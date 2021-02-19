@@ -1,0 +1,9 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $letterSpacing, $letter-spacing in $letterSpacing {
+      .ls#{$infix}-#{$letterSpacing} { letter-spacing: $letter-spacing !important; }
+    }
+  }
+}
