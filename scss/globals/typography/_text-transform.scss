@@ -4,7 +4,7 @@
     $var: ('uppercase': uppercase, 'lowercase': lowercase, 'capitalize': capitalize, 'normal-case': none);
 
     @each $var, $text-transform in $var {
-      #{$var}#{$infix} { text-transform: $text-transform !important; }
+      text#{$infix}-#{$var} { text-transform: $text-transform !important; }
     }
   }
 }
