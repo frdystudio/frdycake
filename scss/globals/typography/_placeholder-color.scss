@@ -1,0 +1,17 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('transparent': transparent, 'current': currentColor);
+
+    @each $var, $placeholder-color in $var {
+      .placeholder#{$infix}-#{$var}::placeholder { color: $placeholder-color !important; }
+    }
+
+    @each $colors, $placeholder-color in $colors {
+      .placeholder#{$infix}-#{$colors}::placeholder {
+        --frdy-placeholder-opacity: 1;
+        color: rgba($placeholder-color, var(--frdy-placeholder-opacity));
+      }
+    }
+  }
+}
