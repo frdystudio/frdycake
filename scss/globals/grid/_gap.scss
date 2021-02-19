@@ -1,0 +1,15 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .gap#{$infix}-px { gap: 1px !important; }
+    .gap#{$infix}-y-px { row-gap: 1px !important; }
+    .gap#{$infix}-x-px { column-gap: 1px !important; }
+
+    @each $spacers, $gap in $spacers {
+      .gap#{$infix}-#{$spacers} { gap: $gap !important; }
+      .gap#{$infix}-y-#{$spacers} { row-gap: $gap !important; }
+      .gap#{$infix}-x-#{$spacers} { column-gap: $gap !important; }
+    }
+  }
+}
