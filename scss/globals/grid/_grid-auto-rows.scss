@@ -1,0 +1,15 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: (
+      'auto': auto,
+      'min': min-content,
+      'max': max-content,
+      'fr': minmax(0, 1fr)
+    );
+
+    @each $var, $grid-auto-rows in $var {
+      .auto#{$infix}-rows-#{$var} { grid-auto-rows: $grid-auto-rows !important; }
+    }
+  }
+}
