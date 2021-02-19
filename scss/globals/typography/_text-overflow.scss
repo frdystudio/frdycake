@@ -1,0 +1,16 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('ellipsis': ellipsis, 'clip': clip);
+
+    .truncate#{$infix} {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    @each $var, $text-overflow in $var {
+      .overflow#{$infix}-#{$var} { text-overflow: $text-overflow !important; }
+    }
+  }
+}
