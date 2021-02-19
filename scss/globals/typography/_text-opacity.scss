@@ -3,8 +3,18 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $opacity, $text-opacity in $opacity {
-      .text#{$infix}-opacity-#{$opacity} { --frdy-text-opacity: #{$text-opacity} !important; }
+      .text#{$infix}-opacity-#{$opacity},
       .link#{$infix}-opacity-#{$opacity} { --frdy-text-opacity: #{$text-opacity} !important; }
+
+      .text#{$infix}-opacity-#{$opacity}\:hover,
+      .link#{$infix}-opacity-#{$opacity}\:hover {
+        &:hover { --frdy-text-opacity: #{$text-opacity} !important; }
+      }
+
+      .text#{$infix}-opacity-#{$opacity}\:focus,
+      .link#{$infix}-opacity-#{$opacity}\:focus {
+        &:focus { --frdy-text-opacity: #{$text-opacity} !important; }
+      }
     }
   }
 }
