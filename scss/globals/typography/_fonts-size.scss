@@ -19,7 +19,7 @@
 }
 
 @each $font-sizes-lg, $font-size in $font-sizes-lg {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-down(md) {
     #{$font-sizes-lg} { font-size: $font-size !important; }
   }
 }
