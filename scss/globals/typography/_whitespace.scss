@@ -4,7 +4,7 @@
     $var: ('normal': normal, 'nowrap': nowrap, 'pre': pre, 'pre-line': pre-line, 'pre-wrap': pre-wrap);
 
     @each $var, $white-space in $var {
-      .whitespace#{$infix}-#{$var} { white-space: $white-space !important; }
+      .text#{$infix}-#{$var} { white-space: $white-space !important; }
     }
   }
 }
