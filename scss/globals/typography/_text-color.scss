@@ -4,7 +4,13 @@
     $var: ('transparent': transparent, 'current': currentColor);
 
     @each $var, $text-color in $var {
-      .text#{$infix}-#{$var} { color: $text-color !important; }
+      .text#{$infix}-#{$var} { color: $text-color; }
+      .text#{$infix}-#{$var}\:hover {
+        &:hover { color: $text-color; }
+      }
+      .text#{$infix}-#{$var}\:focus {
+        &:focus { color: $text-color }
+      }
     }
 
     @each $colors, $text-color in $colors {
@@ -12,10 +18,23 @@
         --frdy-text-opacity: 1;
         color: rgba($text-color, var(--frdy-text-opacity));
       }
-
       .link#{$infix}-#{$colors} {
         --frdy-text-opacity: 1;
         color: rgba($text-color, var(--frdy-text-opacity));
+      }
+      .text#{$infix}-#{$colors}\:hover,
+      .link#{$infix}-#{$colors}\:hover {
+        &:hover {
+          --frdy-text-opacity: 1;
+          color: rgba($text-color, var(--frdy-text-opacity));
+        }
+      }
+      .text#{$infix}-#{$colors}\:focus,
+      .link#{$infix}-#{$colors}\:focus {
+        &:focus {
+          --frdy-text-opacity: 1;
+          color: rgba($text-color, var(--frdy-text-opacity));
+        }
       }
     }
   }
