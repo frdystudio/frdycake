@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('baseline': baseline, 'top': top, 'middle': middle, 'bottom': bottom, 'text-top': text-top, 'text-bottom': text-bottom);
+
+    @each $var, $vertical-align in $var {
+      .align#{$infix}-#{$var} { vertical-align: $vertical-align !important; }
+    }
+  }
+}
