@@ -1,0 +1,19 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('normal-nums': normal,
+      'ordinal': ordinal,
+      'slashed-zero': slashed-zero,
+      'lining-nums': lining-nums,
+      'oldstyle-nums': oldstyle-nums,
+      'proportional-nums': proportional-nums,
+      'tabular-nums': tabular-nums,
+      'diagonal-fractions': diagonal-fractions,
+      'stacked-fractions': stacked-fractions
+    );
+
+    @each $var, $font-variant-numeric in $var {
+      .#{$var}#{$infix} { font-variant-numeric: $font-variant-numeric !important; }
+    }
+  }
+}
