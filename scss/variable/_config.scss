@@ -153,3 +153,17 @@ $letterSpacing: map-merge((
         '9': 9px,
         '10': 10px
 ), $letterSpacing);
+
+// Font weight variant
+$fontWeightVariant: () !default;
+$fontWeightVariant: map-merge((
+  'thin': 100,
+  'extralight': 200,
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+  'extrabold': 800,
+  'black': 900
+), $fontWeightVariant);
