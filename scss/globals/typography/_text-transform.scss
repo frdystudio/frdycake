@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $var: ('uppercase': uppercase, 'lowercase': lowercase, 'capitalize': capitalize, 'normal-case': none);
+
+    @each $var, $text-transform in $var {
+      #{$var}#{$infix} { text-transform: $text-transform !important; }
+    }
+  }
+}
