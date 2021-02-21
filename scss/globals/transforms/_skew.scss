@@ -3,10 +3,18 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $transformSkew, $transform-skew in $transformSkew {
-      .skew#{$infix}-x-#{$transformSkew} { --frdy-skew-x: #{$transform-skew} !important; }
-      .skew#{$infix}-y-#{$transformSkew} { --frdy-skew-y: #{$transform-skew} !important; }
-      .skew#{$infix}-x-n#{$transformSkew} { --frdy-skew-x: -#{$transform-skew} !important; }
-      .skew#{$infix}-y-n#{$transformSkew} { --frdy-skew-y: -#{$transform-skew} !important; }
+      .skew#{$infix}-x-#{$transformSkew} { --frdy-skew-x: #{$transform-skew}; }
+      .skew#{$infix}-x-#{$transformSkew}\:hover:hover,
+      .skew#{$infix}-x-#{$transformSkew}\:focus:focus { --frdy-skew-x: #{$transform-skew} !important; }
+      .skew#{$infix}-y-#{$transformSkew} { --frdy-skew-y: #{$transform-skew}; }
+      .skew#{$infix}-y-#{$transformSkew}\:hover:hover,
+      .skew#{$infix}-y-#{$transformSkew}\:focus:focus { --frdy-skew-y: #{$transform-skew} !important; }
+      .skew#{$infix}-x-n#{$transformSkew} { --frdy-skew-x: -#{$transform-skew}; }
+      .skew#{$infix}-x-n#{$transformSkew}\:hover:hover,
+      .skew#{$infix}-x-n#{$transformSkew}\:focus:focus { --frdy-skew-x: -#{$transform-skew} !important; }
+      .skew#{$infix}-y-n#{$transformSkew} { --frdy-skew-y: -#{$transform-skew}; }
+      .skew#{$infix}-y-n#{$transformSkew}\:hover:hover,
+      .skew#{$infix}-y-n#{$transformSkew}\:focus:focus { --frdy-skew-y: -#{$transform-skew} !important; }
     }
   }
 }
