@@ -1,28 +1,23 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-    $var: (
-      '0': 0,
-      '25': .25,
-      '50': .5,
-      '75': .75,
-      '90': .9,
-      '95': .95,
-      '100': 1,
-      '105': 1.05,
-      '110': 1.1,
-      '125': 1.25,
-      '150': 1.5,
-      '200': 2
-    );
 
-    @each $var, $scale in $var {
-      .scale#{$infix}-#{$var} {
+    @each $transformScale, $scale in $transformScale {
+      .scale#{$infix}-#{$transformScale} {
+        --frdy-scale-x: #{$scale};
+        --frdy-scale-y: #{$scale};
+      }
+      .scale#{$infix}-#{$transformScale}\:hover:hover,
+      .scale#{$infix}-#{$transformScale}\:focus:focus {
         --frdy-scale-x: #{$scale} !important;
         --frdy-scale-y: #{$scale} !important;
       }
-      .scale#{$infix}-y-#{$var} { --frdy-scale-y: #{$scale} !important; }
-      .scale#{$infix}-x-#{$var} { --frdy-scale-x: #{$scale} !important; }
+      .scale#{$infix}-y-#{$transformScale} { --frdy-scale-y: #{$scale}; }
+      .scale#{$infix}-y-#{$transformScale}\:hover:hover,
+      .scale#{$infix}-y-#{$transformScale}\:focus:focus { --frdy-scale-y: #{$scale} !important; }
+      .scale#{$infix}-x-#{$transformScale} { --frdy-scale-x: #{$scale}; }
+      .scale#{$infix}-x-#{$transformScale}\:hover:hover,
+      .scale#{$infix}-x-#{$transformScale}\:focus:focus { --frdy-scale-x: #{$scale} !important; }
     }
   }
 }
