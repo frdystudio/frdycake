@@ -4,11 +4,20 @@
     $var: ('transparent': transparent, 'current': currentColor);
 
     @each $var, $border-color in $var {
-      .border#{$infix}-#{$var} { border-color: $border-color !important; }
+      .border#{$infix}-#{$var} { border-color: $border-color; }
+      .border#{$infix}-#{$var}\:hover:hover,
+      .border#{$infix}-#{$var}\:focus:focus,
+      .border#{$infix}-#{$var}\:focus-within:focus-within { border-color: $border-color !important; }
     }
 
     @each $colors, $border-color in $colors {
       .border#{$infix}-#{$colors} {
+        --frdy-border-opacity: 1;
+        border-color: rgba($border-color, var(--frdy-border-opacity));
+      }
+      .border#{$infix}-#{$colors}\:hover:hover,
+      .border#{$infix}-#{$colors}\:focus:focus,
+      .border#{$infix}-#{$colors}\:focus-within:focus-within {
         --frdy-border-opacity: 1;
         border-color: rgba($border-color, var(--frdy-border-opacity)) !important;
       }
