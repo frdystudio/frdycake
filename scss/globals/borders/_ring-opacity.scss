@@ -2,20 +2,10 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .ring#{$infix}-opacity-0 { --frdy-ring-opacity: 0 !important; }
-    .ring#{$infix}-opacity-5 { --frdy-ring-opacity: .05 !important; }
-    .ring#{$infix}-opacity-10 { --frdy-ring-opacity: .1 !important; }
-    .ring#{$infix}-opacity-20 { --frdy-ring-opacity: .2 !important; }
-    .ring#{$infix}-opacity-25 { --frdy-ring-opacity: .25 !important; }
-    .ring#{$infix}-opacity-30 { --frdy-ring-opacity: .3 !important; }
-    .ring#{$infix}-opacity-40 { --frdy-ring-opacity: .4 !important; }
-    .ring#{$infix}-opacity-50 { --frdy-ring-opacity: .5 !important; }
-    .ring#{$infix}-opacity-60 { --frdy-ring-opacity: .6 !important; }
-    .ring#{$infix}-opacity-70 { --frdy-ring-opacity: .7 !important; }
-    .ring#{$infix}-opacity-75 { --frdy-ring-opacity: .75 !important; }
-    .ring#{$infix}-opacity-80 { --frdy-ring-opacity: .8 !important; }
-    .ring#{$infix}-opacity-90 { --frdy-ring-opacity: .9 !important; }
-    .ring#{$infix}-opacity-95 { --frdy-ring-opacity: .95 !important; }
-    .ring#{$infix}-opacity-100 { --frdy-ring-opacity: 1 !important; }
+    @each $opacity, $opacities in $opacity {
+      .ring#{$infix}-opacity-#{$opacity} { --frdy-ring-opacity: #{$opacities} }
+      .ring#{$infix}-opacity-#{$opacity}\:focus:focus,
+      .ring#{$infix}-opacity-#{$opacity}\:focus-within:focus-within { --frdy-ring-opacity: #{$opacities} !important; }
+    }
   }
 }
