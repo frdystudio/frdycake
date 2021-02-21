@@ -5,12 +5,38 @@
 
     @each $var, $placeholder-color in $var {
       .placeholder#{$infix}-#{$var}::placeholder { color: $placeholder-color !important; }
+      .placeholder#{$infix}-#{$var}\:focus {
+        &:focus {
+          &::placeholder { color: $placeholder-color !important; }
+        }
+      }
+      .placeholder#{$infix}-#{$var}\:focus-within {
+        &:focus-within {
+          &::placeholder { color: $placeholder-color !important; }
+        }
+      }
     }
 
     @each $colors, $placeholder-color in $colors {
       .placeholder#{$infix}-#{$colors}::placeholder {
         --frdy-placeholder-opacity: 1;
         color: rgba($placeholder-color, var(--frdy-placeholder-opacity));
+      }
+      .placeholder#{$infix}-#{$colors}\:focus {
+        &:focus {
+          &::placeholder {
+            --frdy-placeholder-opacity: 1;
+            color: rgba($placeholder-color, var(--frdy-placeholder-opacity));
+          }
+        }
+      }
+      .placeholder#{$infix}-#{$colors}\:focus-within {
+        &:focus-within {
+          &::placeholder {
+            --frdy-placeholder-opacity: 1;
+            color: rgba($placeholder-color, var(--frdy-placeholder-opacity));
+          }
+        }
       }
     }
   }
