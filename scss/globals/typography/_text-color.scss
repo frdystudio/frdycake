@@ -11,6 +11,9 @@
       .text#{$infix}-#{$var}\:focus {
         &:focus { color: $text-color }
       }
+      .text#{$infix}-#{$var}\:focus-within {
+        &:focus-within { color: $text-color; }
+      }
     }
 
     @each $colors, $text-color in $colors {
@@ -32,6 +35,13 @@
       .text#{$infix}-#{$colors}\:focus,
       .link#{$infix}-#{$colors}\:focus {
         &:focus {
+          --frdy-text-opacity: 1;
+          color: rgba($text-color, var(--frdy-text-opacity));
+        }
+      }
+      .text#{$infix}-#{$colors}\:focus-within,
+      .link#{$infix}-#{$colors}\:focus-within {
+        &:focus-within {
           --frdy-text-opacity: 1;
           color: rgba($text-color, var(--frdy-text-opacity));
         }
