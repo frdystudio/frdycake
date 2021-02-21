@@ -4,6 +4,12 @@
 
     @each $opacity, $placeholder-opacity in $opacity {
       .placeholder#{$infix}-opacity-#{$opacity} { --frdy-placeholder-opacity: #{$placeholder-opacity} !important; }
+      .placeholder#{$infix}-opacity-#{$opacity}\:focus {
+        &:focus { --frdy-placeholder-opacity: #{$placeholder-opacity} !important; }
+      }
+      .placeholder#{$infix}-opacity-#{$opacity}\:focus-within {
+        &:focus-within { --frdy-placeholder-opacity: #{$placeholder-opacity} !important; }
+      }
     }
   }
 }
