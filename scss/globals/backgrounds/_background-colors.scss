@@ -2,11 +2,27 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .bg#{$infix}-transparent { background-color: transparent !important; }
-    .bg#{$infix}-current { background-color: currentColor !important; }
+    .bg#{$infix}-transparent,
+    .bg#{$infix}-transparent\:hover:hover,
+    .bg#{$infix}-transparent\:focus:focus,
+    .bg#{$infix}-transparent\:focus-within:focus-within {
+      background-color: transparent !important;
+    }
+    .bg#{$infix}-current,
+    .bg#{$infix}-current\:hover:hover,
+    .bg#{$infix}-current\:focus:focus,
+    .bg#{$infix}-current\:focus-within {
+      background-color: currentColor !important;
+    }
 
-    @each $color, $background-color in $colors {
-      .bg#{$infix}-#{$color} {
+    @each $colors, $background-color in $colors {
+      .bg#{$infix}-#{$colors} {
+        --frdy-bg-opacity: 1;
+        background-color: rgba($background-color, var(--frdy-bg-opacity));
+      }
+      .bg#{$infix}-#{$colors}\:hover:hover,
+      .bg#{$infix}-#{$colors}\:focus:focus,
+      .bg#{$infix}-#{$colors}\:focus-within:focus-within {
         --frdy-bg-opacity: 1;
         background-color: rgba($background-color, var(--frdy-bg-opacity)) !important;
       }
