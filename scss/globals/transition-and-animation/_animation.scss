@@ -10,6 +10,9 @@ $var: (
   .animate-#{$var} {
     animation: $animation !important;
   }
+  .animate-#{$var}\:hover:hover {
+    animation: $animation !important;
+  }
 }
 
 @keyframes spin {
