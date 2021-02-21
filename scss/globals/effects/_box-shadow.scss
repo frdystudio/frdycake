@@ -2,18 +2,28 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
     $var: (
-            'sm': 0px 8px 12px rgba(0, 0, 0, 0.12),
-            ' ': 0px 12px 16px rgba(0, 0, 0, 0.08),
-            'md': 0px 20px 24px rgba(0, 0, 0, 0.08),
-            'lg': 0px 28px 32px rgba(0, 0, 0, 0.06),
+            'sm': 0 8px 12px rgba(0, 0, 0, 0.12),
+            'md': 0 20px 24px rgba(0, 0, 0, 0.08),
+            'lg': 0 28px 32px rgba(0, 0, 0, 0.06),
             'inner': inset 0 8px 12px 0 rgba(0, 0, 0, 0.12),
             'none': 0 0 #0000
     );
 
     * { --frdy-shadow: 0 0 #0000; }
+    .shadow#{$infix} { box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08); }
+    .shadow#{$infix}\:hover:hover,
+    .shadow#{$infix}\:focus:focus,
+    .shadow#{$infix}\:focus-within:focus-within { box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08) !important; }
+
     @each $var, $box-shadow in $var {
       .shadow#{$infix}-#{$var} {
         --frdy-shadow: #{$box-shadow};
+        box-shadow: var(--frdy-ring-offset-shadow, 0 0 #0000), var(--frdy-ring-shadow, 0 0 #0000), var(--frdy-shadow);
+      }
+      .shadow#{$infix}-#{$var}\:hover:hover,
+      .shadow#{$infix}-#{$var}\:focus:focus,
+      .shadow#{$infix}-#{$var}\:focus-within:focus-within {
+        --frdy-shadow: #{$box-shadow} !important;
         box-shadow: var(--frdy-ring-offset-shadow, 0 0 #0000), var(--frdy-ring-shadow, 0 0 #0000), var(--frdy-shadow) !important;
       }
     }
