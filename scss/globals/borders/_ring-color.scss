@@ -4,13 +4,17 @@
     $var: ('transparent': transparent, 'current': currentColor);
 
     @each $var, $ring-color in $var {
-      .ring#{$infix}-#{$var} { --frdy-ring-color: #{$ring-color} !important; }
+      .ring#{$infix}-#{$var} { --frdy-ring-color: #{$ring-color}; }
+      .ring#{$infix}-#{$var}\:focus:focus,
+      .ring#{$infix}-#{$var}\:focus-within:focus-within { --frdy-ring-color: #{$ring-color} !important; }
     }
 
     @each $colors, $ring-color in $colors {
       .ring#{$infix}-#{$colors} {
-        --frdy-ring-color: rgba(#{$ring-color}, var(--frdy-ring-opacity)) !important;
+        --frdy-ring-color: rgba(#{$ring-color}, var(--frdy-ring-opacity));
       }
+      .ring#{$infix}-#{$colors}\:focus:focus,
+      .ring#{$infix}-#{$colors}\:focus-within:focus-within { --frdy-ring-color: rgba(#{$ring-color}, var(--frdy-ring-opacity)) !important; }
     }
   }
 }
