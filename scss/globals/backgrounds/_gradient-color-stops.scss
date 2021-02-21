@@ -6,24 +6,53 @@
       --frdy-gradient-from: transparent;
       --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(0, 0, 0, 0));
     }
+    .from#{$infix}-transparent\:hover:hover,
+    .from#{$infix}-transparent\:focus:focus {
+      --frdy-gradient-from: transparent;
+      --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(0, 0, 0, 0)) !important;
+    }
     .from#{$infix}-current {
       --frdy-gradient-from: currentColor;
       --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(255, 255, 255, 0));
     }
+    .from#{$infix}-current\:hover:hover,
+    .from#{$infix}-current\:focus:focus {
+      --frdy-gradient-from: currentColor;
+      --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(255, 255, 255, 0)) !important;
+    }
     .via#{$infix}-transparent { --frdy-gradient-stops: var(--frdy-gradient-from), transparent, var(--frdy-gradient-to, rgba(0, 0, 0, 0)); }
+    .via#{$infix}-transparent\:hover:hover,
+    .via#{$infix}-transparent\:focus:focus { --frdy-gradient-stops: var(--frdy-gradient-from), transparent, var(--frdy-gradient-to, rgba(0, 0, 0, 0)) !important; }
     .via#{$infix}-current { --frdy-gradient-stops: var(--frdy-gradient-from), currentColor, var(--frdy-gradient-to, rgba(255, 255, 255, 0)); }
-    .to-transparent	{ --frdy-gradient-to: transparent; }
-    .to-current	{ --frdy-gradient-to: currentColor; }
+    .via#{$infix}-current\:hover:hover,
+    .via#{$infix}-current\:focus:focus { --frdy-gradient-stops: var(--frdy-gradient-from), currentColor, var(--frdy-gradient-to, rgba(255, 255, 255, 0)) !important; }
+    .to#{$infix}-transparent	{ --frdy-gradient-to: transparent; }
+    .to#{$infix}-transparent\:hover:hover,
+    .to#{$infix}-transparent\:focus:focus { --frdy-gradient-to: transparent !important; }
+    .to#{$infix}-current	{ --frdy-gradient-to: currentColor; }
+    .to#{$infix}-current\:hover:hover,
+    .to#{$infix}-current\:focus:focus { --frdy-grdient-to: currentColor !important; }
 
     @each $colors, $gradient-from in $colors {
       .from#{$infix}-#{$colors} {
         --frdy-gradient-from: #{$gradient-from};
         --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(#{$gradient-from}, 0));
       }
+      .from#{$infix}-#{$colors}\:hover:hover,
+      .from#{$infix}-#{$colors}\:focus:focus {
+        --frdy-gradient-from: #{$gradient-from} !important;
+        --frdy-gradient-stops: var(--frdy--gradient-from), var(--frdy-gradient-to, rgba(#{$gradient-from}, 0)) !important;
+      }
 
       .via#{$infix}-#{$colors} { --frdy-gradient-stops: var(--frdy-gradient-from), #{$gradient-from}, var(--frdy-gradient-to, rgba(#{$gradient-from}, 0)); }
+      .via#{$infix}-#{$colors}\:hover:hover,
+      .via#{$infix}-#{$colors}\:focus:focus {
+        --frdy-gradient-stops: var(--frdy-gradient-from), #{$gradient-from}, var(--frdy-gradient-to, rgba(#{$gradient-from}, 0)) !important;
+      }
 
       .to#{$infix}-#{$colors} { --frdy-gradient-to: #{$gradient-from}; }
+      .to#{$infix}-#{$colors}\:hover:hover,
+      .to#{$infix}-#{$colors}\:focus:focus { --frdy-gradient-to: #{$gradient-from} !important; }
     }
   }
 }
