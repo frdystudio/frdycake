@@ -6,14 +6,30 @@
       .translate#{$infix}-x-#{$transformTranslate} {
         --frdy-translate-x: #{$transform-translate};
       }
+      .translate#{$infix}-x-#{$transformTranslate}\:hover:hover,
+      .translate#{$infix}-x-#{$transformTranslate}\:focus:focus {
+        --frdy-translate-x: #{$transform-translate} !important;
+      }
       .translate#{$infix}-y-#{$transformTranslate} {
         --frdy-translate-y: #{$transform-translate};
+      }
+      .translate#{$infix}-y-#{$transformTranslate}\:hover:hover,
+      .translate#{$infix}-y-#{$transformTranslate}\:focus:focus {
+        --frdy-translate-y: #{$transform-translate} !important;
       }
       .translate#{$infix}-y-n#{$transformTranslate} {
         --frdy-translate-y: -#{$transform-translate};
       }
+      .translate#{$infix}-y-n#{$transformTranslate}\:hover:hover,
+      .translate#{$infix}-y-n#{$transformTranslate}\:focus:focus {
+        --frdy-translate-y: -#{$transform-translate} !important;
+      }
       .translate#{$infix}-x-n#{$transformTranslate} {
         --frdy-translate-x: -#{$transform-translate};
+      }
+      .translate#{$infix}-x-n#{$transformTranslate}\:hover:hover,
+      .translate#{$infix}-x-n#{$transformTranslate}\:focus:focus {
+        --frdy-translate-x: -#{$transform-translate} !important;
       }
     }
   }
