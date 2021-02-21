@@ -3,11 +3,16 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
     $var: ('0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '8': 8);
 
-    .ring#{$infix}-inset {
-      --frdy-ring-inset : inset;
-    }
+    .ring#{$infix}-inset { --frdy-ring-inset : inset; }
+    .ring#{$infix}-inset\:focus:focus,
+    .ring#{$infix}-inset\:focus-within:focus-within { --frdy-ring-inset: inset !important; }
+
     @each $var, $box-shadow in $var {
       .ring#{$infix}-#{$var} {
+        box-shadow: var(--frdy-ring-inset) 0 0 0 calc(#{$box-shadow} + var(--frdy-ring-offset-width)) var(--frdy--ring-color);
+      }
+      .ring#{$infix}-#{$var}\:focus:focus,
+      .ring#{$infix}-#{$var}\:focus-within:focus-within {
         box-shadow: var(--frdy-ring-inset) 0 0 0 calc(#{$box-shadow} + var(--frdy-ring-offset-width)) var(--frdy--ring-color) !important;
       }
     }
