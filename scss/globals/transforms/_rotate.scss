@@ -3,8 +3,12 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $transformRotate, $transform-rotate in $transformRotate {
-      .rotate#{$infix}-#{$transformRotate} { --frdy-rotate: #{$transform-rotate} !important; }
-      .rotate#{$infix}-n#{$transformRotate} { --frdy-rotate: -#{$transform-rotate} !important; }
+      .rotate#{$infix}-#{$transformRotate} { --frdy-rotate: #{$transform-rotate}; }
+      .rotate#{$infix}-#{$transformRotate}\:hover:hover,
+      .rotate#{$infix}-#{$transformRotate}\:focus:focus { --frdy-rotate: #{$transform-rotate} !important; }
+      .rotate#{$infix}-n#{$transformRotate} { --frdy-rotate: -#{$transform-rotate}; }
+      .rotate#{$infix}-n#{$transformRotate}\:hover:hover,
+      .rotate#{$infix}-n#{$transformRotate}\:focus:focus { --frdy-rotate: -#{$transform-rotate} !important; }
     }
   }
 }
