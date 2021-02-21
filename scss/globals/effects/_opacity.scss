@@ -3,7 +3,10 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $opacity, $opacities in $opacity {
-      .opacity#{$infix}-#{$opacity} { opacity: $opacities !important; }
+      .opacity#{$infix}-#{$opacity} { opacity: $opacities; }
+      .opacity#{$infix}-#{$opacity}\:hover:hover,
+      .opacity#{$infix}-#{$opacity}\:focus:focus,
+      .opacity#{$infix}-#{$opacity}\:focus-within:focus-within { opacity: $opacities !important; }
     }
   }
 }
