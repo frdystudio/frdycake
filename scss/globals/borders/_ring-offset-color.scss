@@ -5,6 +5,11 @@
 
     @each $var, $box-shadow in $var {
       .ring#{$infix}-offset-#{$var} {
+        --frdy-ring-offset-color: #{$box-shadow};
+        box-shadow: 0 0 0 var(--frdy-ring-offset-width) var(--frdy-ring-offset-color), var(--frdy-ring-shadow);
+      }
+      .ring#{$infix}-offset-#{$var}\:focus:focus,
+      .ring#{$infix}-offset-#{$var}\:focus-within:focus-within {
         --frdy-ring-offset-color: #{$box-shadow} !important;
         box-shadow: 0 0 0 var(--frdy-ring-offset-width) var(--frdy-ring-offset-color), var(--frdy-ring-shadow) !important;
       }
@@ -13,6 +18,11 @@
     @each $colors, $box-shadow in $colors {
       .ring#{$infix}-offset-#{$colors} {
         --frdy-ring-offset-color: #{$box-shadow};
+        box-shadow: 0 0 0 var(--frdy-ring-offset-width) var(--frdy-ring-offset-color), var(--frdy-ring-shadow);
+      }
+      .ring#{$infix}-offset-#{$colors}\:focus:focus,
+      .ring#{$infix}-offset-#{$colors}\:focus-within:focus-within {
+        --frdy-ring-offset-color: #{$box-shadow} !important;
         box-shadow: 0 0 0 var(--frdy-ring-offset-width) var(--frdy-ring-offset-color), var(--frdy-ring-shadow) !important;
       }
     }
