@@ -15,6 +15,11 @@
       .link#{$infix}-opacity-#{$opacity}\:focus {
         &:focus { --frdy-text-opacity: #{$text-opacity} !important; }
       }
+
+      .text#{$infix}-opacity-#{$opacity}\:focus-within,
+      .link#{$infix}-opacity-#{$opacity}\:focus-within {
+        &:focus-within { --frdy-text-opacity: #{$text-opacity} !important; }
+      }
     }
   }
 }
