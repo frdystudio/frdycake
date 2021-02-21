@@ -1,0 +1,28 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    $outline-offset: 2px;
+
+    .outline#{$infix}-none {
+      outline: $outline-offset solid transparent;
+      outline-offset: $outline-offset;
+    }
+    .outline#{$infix}-none\:focus:focus,
+    .outline#{$infix}-none\:focus-within:focus-within {
+      outline: $outline-offset solid transparent !important;
+      outline-offset: $outline-offset !important;
+    }
+
+    @each $colors, $outline in $colors {
+      .outline#{$infix}-#{$colors} {
+        outline: $outline-offset dotted $outline;
+        outline-offset: $outline-offset;
+      }
+      .outline#{$infix}-#{$colors}\:focus:focus,
+      .outline#{$infix}-#{$colors}\:focus-within:focus-within {
+        outline: $outline-offset dotted $outline !important;
+        outline-offset: $outline-offset;
+      }
+    }
+  }
+}
