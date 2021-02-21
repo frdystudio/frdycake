@@ -4,52 +4,22 @@
 
     @each $spacers, $font-size in $spacers {
       .fs#{$infix}-#{$spacers} { font-size: $font-size !important; }
-      .fs#{$infix}-#{$spacers}\:hover {
-        &:hover { font-size: $font-size !important; }
-      }
-      .fs#{$infix}-#{$spacers}\:focus {
-        &:focus { font-size: $font-size !important; }
-      }
     }
 
     @each $display-font-sizes, $font-size in $display-font-sizes {
       .display#{$infix}-#{$display-font-sizes} { font-size: $font-size !important; }
-      .display#{$infix}-#{$display-font-sizes}\:hover {
-        &:hover { font-size: $font-size !important; }
-      }
-      .display#{$infix}-#{$display-font-sizes}\:focus {
-        &:focus { font-size: $font-size !important; }
-      }
     }
   }
 }
 
 .lead { font-size: $h5-font-size !important; }
-.lead\:hover {
-  &:hover { font-size: $h5-font-size !important; }
-}
-.lead\:focus {
-  &:focus { font-size: $h5-font-size !important; }
-}
 
 @each $font-sizes, $font-size in $font-sizes {
   #{$font-sizes} { font-size: $font-size !important; }
-  #{$font-sizes}\:hover {
-    &:hover { font-size: $font-size !important; }
-  }
-  #{$font-sizes}\:focus {
-    &:focus { font-size: $font-size !important; }
-  }
 }
 
 @each $font-sizes-lg, $font-size in $font-sizes-lg {
   @include media-breakpoint-down(md) {
     #{$font-sizes-lg} { font-size: $font-size !important; }
-    #{$font-sizes-lg}\:hover {
-      &:hover { font-size: $font-size !important; }
-    }
-    #{$font-sizes-lg}\:focus {
-      &:hover { font-size: $font-size !important; }
-    }
   }
 }
