@@ -5,6 +5,15 @@
 
     @each $var, $text-decoration in $var {
       .text#{$infix}-#{$var} { text-decoration: $text-decoration !important; }
+      .text#{$infix}-#{$var}\:hover {
+        &:hover { text-decoration: $text-decoration !important; }
+      }
+      .text#{$infix}-#{$var}\:focus {
+        &:focus { text-decoration: $text-decoration !important; }
+      }
+      .text#{$infix}-#{$var}\:focus-within {
+        &:focus-within { text-decoration: $text-decoration !important; }
+      }
     }
   }
 }
