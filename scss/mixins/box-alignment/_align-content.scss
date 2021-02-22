@@ -1,0 +1,5 @@
+// center, flex-start, flex-end, space-between, space-around, space-evenly
+
+@mixin align-content($align-content-value) {
+  align-content: $align-content-value;
+}
