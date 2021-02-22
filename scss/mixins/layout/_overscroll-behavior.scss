@@ -1,0 +1,8 @@
+// auto, contain, none, y: auto, y: contain, y: none, x: auto, x: contain, x: none
+
+@mixin overscroll-behavior($overscroll-behavior-value) {
+  overscroll-behavior: $overscroll-behavior-value;
+}
+@mixin overscroll-behavior-xy($property, $overscroll-behavior-value) {
+  overscroll-behavior-#{$property}: $overscroll-behavior-value;
+}
