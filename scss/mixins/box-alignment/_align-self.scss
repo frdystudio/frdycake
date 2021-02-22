@@ -1,0 +1,5 @@
+// auto, flex-start, flex-end, center, stretch
+
+@mixin align-self($align-self-value) {
+  align-self: $align-self-value;
+}
