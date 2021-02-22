@@ -1,0 +1,5 @@
+// (left, right, both, none)
+
+@mixin clear($clear-value) {
+  clear: $clear-value;
+}
