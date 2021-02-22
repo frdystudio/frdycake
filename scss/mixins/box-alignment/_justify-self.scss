@@ -1,0 +1,5 @@
+// auto, start, end, center, stretch
+
+@mixin justify-self($justify-self-value) {
+  justify-self: $justify-self-value;
+}
