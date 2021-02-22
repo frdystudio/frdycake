@@ -1,4 +1,4 @@
-// floats value ('end': right, 'start': left, 'none': none);
+// (right, left, none);
 
 @mixin float($property, $float-value) {
   #{$property}: $float-value;
