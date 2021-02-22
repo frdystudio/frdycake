@@ -1,5 +1,5 @@
 // (border-box, content-box)
 
-@mixin box-sizing($property, $box-sizing-value) {
-  #{$property}: $box-sizing-value;
+@mixin box-sizing($box-sizing-value) {
+  box-sizing: $box-sizing-value;
 }
