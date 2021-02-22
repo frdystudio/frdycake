@@ -1,0 +1,5 @@
+// 1 1 0%, 1 1 auto, 0 1 auto, none
+
+@mixin flex($flex-value) {
+  flex: $flex-value;
+}
