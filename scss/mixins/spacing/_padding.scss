@@ -1,0 +1,23 @@
+@mixin padding($padding-value) {
+  padding: $padding-value;
+}
+@mixin padding-py($padding-value) {
+  padding-top: $padding-value;
+  padding-bottom: $padding-value;
+}
+@mixin padding-px($padding-value) {
+  padding-left: $padding-value;
+  padding-right: $padding-value;
+}
+@mixin padding-pt($padding-value) {
+  padding-top: $padding-value;
+}
+@mixin padding-pr($padding-value) {
+  padding-right: $padding-value;
+}
+@mixin padding-pb($padding-value) {
+  padding-bottom: $padding-value;
+}
+@mixin padding-pl($padding-value) {
+  padding-left: $padding-value;
+}

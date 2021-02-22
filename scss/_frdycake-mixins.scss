@@ -32,6 +32,9 @@
 @import "mixins/box-alignment/place-items";
 @import "mixins/box-alignment/place-self";
 
+// spacing
+@import "mixins/spacing/padding";
+
 @import "mixins/breakpoints";
 @import "mixins/grid";
 @import "mixins/grid-framework";
