@@ -1,0 +1,5 @@
+// auto, start, end, center, stretch
+
+@mixin place-self($place-self-value) {
+  place-self: $place-self-value;
+}
