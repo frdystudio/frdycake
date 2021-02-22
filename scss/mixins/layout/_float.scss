@@ -1,5 +1,5 @@
 // (right, left, none);
 
-@mixin float($property, $float-value) {
-  #{$property}: $float-value;
+@mixin float($float-value) {
+  float: $float-value;
 }
