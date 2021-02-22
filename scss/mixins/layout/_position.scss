@@ -1,0 +1,5 @@
+// static, fixed, absolute, relative, sticky
+
+@mixin position($position-value) {
+  position: $position-value;
+}
