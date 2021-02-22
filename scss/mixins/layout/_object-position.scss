@@ -1,0 +1,5 @@
+// bottom, center, left, left bottom, left top, right, right bottom, right top, top
+
+@mixin object-position($object-position-value) {
+  object-position: $object-position-value;
+}
