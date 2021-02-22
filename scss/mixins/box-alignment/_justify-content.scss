@@ -1,0 +1,5 @@
+// flex-start, flex-end, center, space-between, space-around, space-evenly
+
+@mixin justify-content($justify-content-value) {
+  justify-content: $justify-content-value;
+}

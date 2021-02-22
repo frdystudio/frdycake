@@ -19,6 +19,11 @@
 @import "mixins/flexbox/flex-shrink";
 @import "mixins/flexbox/order";
 
+// grid
+
+// box alignment
+@import "mixins/box-alignment/justify-content";
+
 @import "mixins/breakpoints";
 @import "mixins/grid";
 @import "mixins/grid-framework";
