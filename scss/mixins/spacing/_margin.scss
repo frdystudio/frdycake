@@ -1,0 +1,46 @@
+@mixin margin($margin-value) {
+  margin: $margin-value;
+}
+@mixin margin-n($margin-value) {
+  margin: -#{$margin-value};
+}
+@mixin margin-my($margin-value) {
+  margin-top: $margin-value;
+  margin-bottom: $margin-value;
+}
+@mixin margin-nmy($margin-value) {
+  margin-top: -#{$margin-value};
+  margin-bottom: -#{$margin-value};
+}
+@mixin margin-mx($margin-value) {
+  margin-left: $margin-value;
+  margin-right: $margin-value;
+}
+@mixin margin-nmx($margin-value) {
+  margin-left: -#{$margin-value};
+  margin-right: -#{$margin-value};
+}
+@mixin margin-mt($margin-value) {
+  margin-top: $margin-value;
+}
+@mixin margin-nmt($margin-value) {
+  margin-top: -#{$margin-value};
+}
+@mixin margin-mr($margin-value) {
+  margin-right: $margin-value;
+}
+@mixin margin-nmr($margin-value) {
+  margin-right: -#{$margin-value};
+}
+@mixin margin-mb($margin-value) {
+  margin-bottom: $margin-value;
+}
+@mixin margin-nmb($margin-value) {
+  margin-bottom: -#{$margin-value};
+}
+@mixin margin-ml($margin-value) {
+  margin-left: $margin-value;
+}
+@mixin margin-nml($margin-value) {
+  margin-left: -#{$margin-value};
+}
