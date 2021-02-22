@@ -1,0 +1,5 @@
+// visible, hidden
+
+@mixin visibility($visibility-value) {
+  visibility: $visibility-value;
+}
