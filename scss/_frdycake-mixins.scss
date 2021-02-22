@@ -11,6 +11,9 @@
 @import "mixins/layout/visibility";
 @import "mixins/layout/z-index";
 
+// flexbox
+@import "mixins/flexbox/flex-direction";
+
 @import "mixins/breakpoints";
 @import "mixins/grid";
 @import "mixins/grid-framework";
