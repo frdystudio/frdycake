@@ -1,0 +1,5 @@
+// contain, cover, fill, none, scale-down
+
+@mixin object-fit($object-fit-value) {
+  object-fit: $object-fit-value;
+}
