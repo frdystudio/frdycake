@@ -1,0 +1,8 @@
+// auto, hidden, visible, scroll, x: auto, y: auto, x: hidden, y: hidden, x: visible, y: visible, x: scroll, y: scroll
+
+@mixin overflow($overflow-value) {
+  overflow: $overflow-value;
+}
+@mixin overflow-xy($property, $overflow-value) {
+  overflow-#{$property}: $overflow-value;
+}
