@@ -1,0 +1,5 @@
+// auto, start, end, center, stretch
+
+@mixin justify-items($justify-items-value) {
+  justify-items: $justify-items-value;
+}
