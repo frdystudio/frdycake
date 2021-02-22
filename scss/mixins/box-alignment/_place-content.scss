@@ -1,0 +1,5 @@
+// center, start, end, space-between, space-around, space-evenly, stretch
+
+@mixin place-content($place-content-value) {
+  place-content: $place-content-value;
+}
