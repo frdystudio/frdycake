@@ -1,0 +1,5 @@
+// auto, start, end, center, stretch
+
+@mixin place-items($place-items-value) {
+  place-items: $place-items-value;
+}
