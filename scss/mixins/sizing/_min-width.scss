@@ -1,0 +1,5 @@
+// 0px, 100%, min-content, max-content
+
+@mixin min-width($min-width-value) {
+  min-width: $min-width-value;
+}
