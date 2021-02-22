@@ -1,0 +1,5 @@
+// 0, 1
+
+@mixin flex-shrink($flex-shrink-value) {
+  flex-shrink: $flex-shrink-value;
+}
