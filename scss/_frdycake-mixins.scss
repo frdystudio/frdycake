@@ -1,7 +1,8 @@
+// layout
+@import "mixins/layout/box-sizing";
+@import "mixins/layout/display";
+
 @import "mixins/breakpoints";
 @import "mixins/grid";
 @import "mixins/grid-framework";
 @import "mixins/transition-and-animation/transition-property";
-
-// layout
-@import "mixins/layout/box-sizing";
