@@ -38,10 +38,11 @@ $borders: () !default;
 $borders: map-merge((
   0: 0,
   1: ($border * .25), // 4px
-  2: ($border * .5), // 8px
-  3: $border, // 16px
-  4: ($border * 1.5), // 24px
-  5: ($border * 2) // 32px
+  2: ($border * .375), // 6px
+  3: ($border * .5), // 8px
+  4: $border, // 16px
+  5: ($border * 1.5), // 24px
+  6: ($border * 2) // 32px
 ), $borders);
 
 // Spacing
