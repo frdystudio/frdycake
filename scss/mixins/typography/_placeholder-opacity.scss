@@ -1,0 +1,3 @@
+@mixin placeholder-opacity($placeholder-opacity-value) {
+  --frdy-placeholder-opacity: #{$placeholder-opacity-value};
+}
