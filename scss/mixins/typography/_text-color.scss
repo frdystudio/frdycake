@@ -1,0 +1,7 @@
+@mixin text-color-std($text-color-std-value) {
+  color: $text-color-std-value;
+}
+@mixin text-color-opacity($text-color-opacity-value) {
+  --frdy-text-opacity: 1;
+  color: rgba(#{$text-color-opacity}, var(--frdy-text-opacity));
+}
