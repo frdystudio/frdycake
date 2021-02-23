@@ -1,0 +1,3 @@
+@mixin text-opacity($text-opacity-value) {
+  --frdy-text-opacity: #{$text-opacity-value};
+}
