@@ -45,6 +45,9 @@
 @import "mixins/sizing/min-height";
 @import "mixins/sizing/max-height";
 
+// typography
+@import "mixins/typography/font-family";
+
 @import "mixins/breakpoints";
 @import "mixins/grid";
 @import "mixins/grid-framework";
