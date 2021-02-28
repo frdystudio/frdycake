@@ -37,7 +37,7 @@ Quickly build and design new UI without writing CSS.
 
 # **Version**
 
-1.0.0-alpha
+1.0.0
 
 # **Installing**
 
