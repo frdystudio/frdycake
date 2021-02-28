@@ -18,7 +18,7 @@
     @each $colors, $background-color in $colors {
       .bg#{$infix}-#{$colors} {
         --frdy-bg-opacity: 1;
-        background-color: rgba($background-color, var(--frdy-bg-opacity));
+        background-color: rgba($background-color, var(--frdy-bg-opacity)) !important;
       }
       .bg#{$infix}-#{$colors}\:hover:hover,
       .bg#{$infix}-#{$colors}\:focus:focus,

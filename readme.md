@@ -45,4 +45,4 @@ Quickly build and design new UI without writing CSS.
 
 # **Creator**
 
-<a href="https://github.com/candrawaskito">Candra Waskito</a>
+<a href="https://github.com/candrawaskito">Candra D Waskito</a>
