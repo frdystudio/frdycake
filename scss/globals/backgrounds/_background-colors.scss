@@ -13,6 +13,28 @@
     .bg#{$infix}-current\:focus:focus,
     .bg#{$infix}-current\:focus-within {
       background-color: currentColor !important;
+
+      .text-primary\:hover { color: $primary !important; }
+      .text-secondary\:hover { color: $secondary !important; }
+      .text-info\:hover { color: $info !important; }
+      .text-success\:hover { color: $success !important; }
+      .text-warning\:hover { color: $warning !important; }
+      .text-danger\:hover { color: $danger !important; }
+      .text-white\:hover { color: $white !important; }
+      .text-black\:hover { color: $black !important; }
+      .text-gray\:hover { color: $gray !important; }
+      .text-gray-light\:hover { color: $gray-light !important; }
+
+      .bg-primary\:hover { background-color: $primary !important; }
+      .bg-secondary\:hover { background-color: $secondary !important; }
+      .bg-info\:hover { background-color: $info !important; }
+      .bg-success\:hover { background-color: $success !important; }
+      .bg-warning\:hover { background-color: $warning !important; }
+      .bg-danger\:hover { background-color: $danger !important; }
+      .bg-white\:hover { background-color: $white !important; }
+      .bg-black\:hover { background-color: $black !important; }
+      .bg-gray\:hover { background-color: $gray !important; }
+      .bg-gray-light\:hover { background-color: $gray-light !important; }
     }
 
     @each $colors, $background-color in $colors {
@@ -25,6 +47,28 @@
       .bg#{$infix}-#{$colors}\:focus-within:focus-within {
         --frdy-bg-opacity: 1;
         background-color: rgba($background-color, var(--frdy-bg-opacity)) !important;
+
+        .text-primary\:hover { color: $primary !important; }
+        .text-secondary\:hover { color: $secondary !important; }
+        .text-info\:hover { color: $info !important; }
+        .text-success\:hover { color: $success !important; }
+        .text-warning\:hover { color: $warning !important; }
+        .text-danger\:hover { color: $danger !important; }
+        .text-white\:hover { color: $white !important; }
+        .text-black\:hover { color: $black !important; }
+        .text-gray\:hover { color: $gray !important; }
+        .text-gray-light\:hover { color: $gray-light !important; }
+
+        .bg-primary\:hover { background-color: $primary !important; }
+        .bg-secondary\:hover { background-color: $secondary !important; }
+        .bg-info\:hover { background-color: $info !important; }
+        .bg-success\:hover { background-color: $success !important; }
+        .bg-warning\:hover { background-color: $warning !important; }
+        .bg-danger\:hover { background-color: $danger !important; }
+        .bg-white\:hover { background-color: $white !important; }
+        .bg-black\:hover { background-color: $black !important; }
+        .bg-gray\:hover { background-color: $gray !important; }
+        .bg-gray-light\:hover { background-color: $gray-light !important; }
       }
     }
   }
