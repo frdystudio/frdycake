@@ -13,7 +13,7 @@
     @each $colors, $border-color in $colors {
       .border#{$infix}-#{$colors} {
         --frdy-border-opacity: 1;
-        border-color: rgba($border-color, var(--frdy-border-opacity));
+        border-color: rgba($border-color, var(--frdy-border-opacity)) !important;
       }
       .border#{$infix}-#{$colors}\:hover:hover,
       .border#{$infix}-#{$colors}\:focus:focus,
