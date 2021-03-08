@@ -1,6 +1,6 @@
 {
   "name": "frdycake",
-  "version": "1.0.1-beta",
+  "version": "1.1.0",
   "description": "frdyCake is a CSS Utility first ",
   "main": "index.js",
   "scripts": {
