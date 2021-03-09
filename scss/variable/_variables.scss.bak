@@ -1,0 +1,159 @@
+
+/**
+Color
+ */
+$primary: #1565D8;
+$secondary: #3F598A;
+$success: #36B37E;
+$info: #00B8D9;
+$warning: #FAAD13;
+$danger: #E95432;
+
+$white: white;
+$black: #183B56;
+$gray: #5a7184;
+$gray-light: #B3BAC5;
+
+// Color maps
+$colors: () !default;
+$colors: map-merge(
+  (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+    white: $white,
+    black: $black,
+    gray: $gray,
+    gray-light: $gray-light
+  ),
+  $colors
+);
+
+// Border
+$border: 1rem !default;
+$borders: () !default;
+$borders: map-merge((
+  0: 0,
+  1: ($border * .25), // 4px
+  2: ($border * .375), // 6px
+  3: ($border * .5), // 8px
+  4: $border, // 16px
+  5: ($border * 1.5), // 24px
+  6: ($border * 2) // 32px
+), $borders);
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25), // 4px
+    2: ($spacer * .5), // 8px
+    3: $spacer, // 16px
+    4: ($spacer * 1.5), // 24px
+    5: ($spacer * 2), // 32px
+    6: ($spacer * 2.5), // 40px
+    7: ($spacer * 3), // 48px
+    8: ($spacer * 3.5), // 56px
+    9: ($spacer * 4), // 64px
+    10: ($spacer * 4.5), // 72px
+    11: ($spacer * 5), // 80px
+    12: ($spacer * 5.5), // 88px
+    13: ($spacer * 6), // 96px
+    14: ($spacer * 6.5), // 104px
+    15: ($spacer * 7), // 112px
+    16: ($spacer * 7.5), // 120px
+    17: ($spacer * 8), // 128px
+    18: ($spacer * 8.5), // 136px
+    19: ($spacer * 9), // 144px
+    20: ($spacer * 9.5), // 152px
+    21: ($spacer * 10), // 160px
+    22: ($spacer * 10.5), // 168px
+    23: ($spacer * 11), // 176px
+    24: ($spacer * 11.5), // 184px
+    25: ($spacer * 12), // 192px
+    26: ($spacer * 12.5), // 200px
+    27: ($spacer * 13), // 208px
+    28: ($spacer * 13.5), // 216px
+    29: ($spacer * 14), // 224px
+    30: ($spacer * 14.5), // 232px
+    31: ($spacer * 15), // 240px
+    32: ($spacer * 15.5), // 248px
+    33: ($spacer * 16), // 256px
+    34: ($spacer * 16.5), // 264px
+    35: ($spacer * 18), // 288px
+    36: ($spacer * 18.5), // 296px
+    37: ($spacer * 20), // 320px
+    38: ($spacer * 20.5), //328px
+    39: ($spacer * 22), // 352px
+    40: ($spacer * 22.5), // 360px
+    41: ($spacer * 24), // 384px
+    42: ($spacer * 24.5), // 392px
+    43: ($spacer * 25), // 400px
+    44: ($spacer * 25.5) // 408px
+  ),
+  $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+//$enable-caret:                                true !default;
+//$enable-rounded:                              true !default;
+//$enable-shadows:                              false !default;
+//$enable-gradients:                            false !default;
+//$enable-transitions:                          true !default;
+//$enable-prefers-reduced-motion-media-query:   true !default;
+//$enable-hover-media-query:                    false !default; // Deprecated, no longer affects any compiled CSS
+// $enable-grid-classes:                         true !default;
+//$enable-pointer-cursor-for-buttons:           true !default;
+//$enable-print-styles:                         true !default;
+//$enable-responsive-font-sizes:                false !default;
+//$enable-validation-icons:                     true !default;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+$grid-row-columns:            6 !default;

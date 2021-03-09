@@ -1,0 +1,173 @@
+@import "config/layout";
+@import "config/transforms";
+
+// divideWidth
+$divideWidth: () !default;
+$divideWidth: map-merge((
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  7: 7px,
+  8: 8px
+), $divideWidth);
+
+// Opacity
+$opacity: () !default;
+$opacity: map-merge((
+  0: 0,
+  5: .05,
+  10: .1,
+  20: .2,
+  25: .25,
+  30: .3,
+  40: .4,
+  50: .5,
+  60: .6,
+  70: .7,
+  75: .75,
+  80: .8,
+  90: .9,
+  95: .95,
+  100: 1
+), $opacity);
+
+// Transition duration
+$transitionDuration: () !default;
+$transitionDuration: map-merge((
+  75: 75ms,
+  100: 100ms,
+  150: 150ms,
+  200: 200ms,
+  300: 300ms,
+  500: 500ms,
+  700: 700ms,
+  1000: 1000ms
+), $transitionDuration);
+
+// Transition timing function
+$transitionTimingFunction: () !default;
+$transitionTimingFunction: map-merge((
+  'linear': linear,
+  'in': cubic-bezier(0.4, 0, 1, 1),
+  'out': cubic-bezier(0, 0, 0.2, 1),
+  'in-out': cubic-bezier(0.4, 0, 0.2, 1)
+), $transitionTimingFunction);
+
+// SVG Stroke Width
+$svgStrokeWidth: () !default;
+$svgStrokeWidth: map-merge((
+  '0': 0,
+  '1': 1,
+  '2': 2,
+  '3': 3,
+  '4': 4,
+  '5': 5,
+  '6': 6
+), $svgStrokeWidth);
+
+// Letter spacing
+$letterSpacing: () !default;
+$letterSpacing: map-merge((
+  '0': 0,
+  '0.5': 0.5px,
+  '1': 1px,
+  '2': 2px,
+  '3': 3px,
+  '4': 4px,
+  '5': 5px,
+  '6': 6px,
+  '7': 7px,
+  '8': 8px,
+  '9': 9px,
+  '10': 10px
+), $letterSpacing);
+
+// Font weight variant
+$fontWeightVariant: () !default;
+$fontWeightVariant: map-merge((
+  'thin': 100,
+  'extralight': 200,
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+  'extrabold': 800,
+  'black': 900
+), $fontWeightVariant);
+
+// Font heading
+$font-size-base:              1rem !default;
+$h1-font-size:                $font-size-base * 3.5 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+$p-font-size:                 $font-size-base !default;
+$span-font-size:              $font-size-base - .125 !default;
+$link-font-size:              $font-size-base - .125 !default;
+
+$font-sizes: (
+  'h1': $h1-font-size,
+  'h2': $h2-font-size,
+  'h3': $h3-font-size,
+  'h4': $h4-font-size,
+  'h5': $h5-font-size,
+  'h6': $h6-font-size,
+  'p': $p-font-size,
+  'span': $span-font-size,
+  'link': $link-font-size
+) !default;
+
+$font-sizes-lg: (
+  'h1': 3rem,
+  'h2': 2rem,
+  'h3': 1.5rem,
+  'h4': 1.25rem,
+  'h5': 1rem,
+  'h6': 0.875rem,
+  'p': .875rem,
+  'span': .75rem,
+  'link': .75rem
+) !default;
+
+$display-font-sizes: (
+  '1': 5rem,
+  '2': 4.5rem,
+  '3': 4rem,
+  '4': 3.5rem,
+  '5': 3rem,
+  '6': 2.5rem
+) !default;
+
+$font-family: (
+  'sans': (ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"),
+  'serif': (ui-serif, Georgia, Cambria, "Times New Roman", Times, serif),
+  'mono': (ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace)
+) !default;
+
+// Grid
+$gridSpan: (
+        'auto': auto,
+        'span-1': span 1 / span 1,
+        'span-2': span 2 / span 2,
+        'span-3': span 3 / span 3,
+        'span-4': span 4 / span 4,
+        'span-5': span 5 / span 5,
+        'span-6': span 6 / span 6,
+        'span-7': span 7 / span 7,
+        'span-8': span 8 / span 8,
+        'span-9': span 9 / span 9,
+        'span-10': span 10 / span 10,
+        'span-11': span 11 / span 11,
+        'span-12': span 12 / span 12,
+        'span-full': 1 / -1
+);
+$gridNumber: (
+        '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, '11': 11, '12': 12, '13': 13, 'auto': auto
+);
